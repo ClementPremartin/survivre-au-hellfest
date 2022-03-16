@@ -11,7 +11,7 @@
     --light-alternative: #EBEAE8;
   }
 
-  [data-theme="dark"] {
+  [data-theme="kawaii"] {
     --title-font: 'Chewy', cursive;
     --header-font: 'Spinnaker', sans-serif;
     --common-font: 'Overpass', sans-serif;
@@ -64,15 +64,15 @@ body, html {
 
 .button {
   position: relative;
-  background-color: white;
-  height: 5rem;
-  width: 5rem;
+  background-color: var(--light-alternative);
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   position: fixed;
   top: 5vh; 
   right: 5vw; 
   z-index: 2000;
-  box-shadow: 0 1rem 3rem black;
+  box-shadow: 0 3px 8px black;;
   text-align: center; 
   cursor: pointer;
 }
@@ -87,7 +87,8 @@ body, html {
   background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
   z-index: 1000;
   background-size: 60%;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1.5);
+  opacity: 0.9;
 }
 
 .nav {
@@ -109,22 +110,23 @@ body, html {
   list-style: none;
   text-align: center;
   width: 100%;
-  link: none;
+  margin-top: 3.5rem;
+  font-family: var(--title-font);
 }
 
 .item {
-  margin: 3rem;
-  font-size: 3rem;
+  margin: 2rem;
+  font-size: 2rem;
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   padding: 1rem 2rem;
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(
     120deg,
@@ -139,13 +141,13 @@ body, html {
 
 .link:hover,
 .link:active {
-  color: #F06543;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform: scale(80);
+  transform: scale(90);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
@@ -251,3 +253,19 @@ text-decoration: none;
 
 
 /* CSS footer Clément End */
+
+/* Logo */
+
+.logo {
+  border-radius: 50%;
+  width: 6rem;
+  position: absolute;
+  z-index: 2100;
+  top: 5vh;
+  left: 5vw;
+  margin: 0;
+  box-shadow: 0 3px 8px black;
+}
+
+/* Logo end */
+
