@@ -35,7 +35,7 @@ body {
   font-family: var(--title-font);
   color: var(--light-alternative);
   font-size: 5vw;
-  background-image: url(https://www.nonfiction.fr/prximgsrv/crp/790/469/x/repo/e/6/e652a236046f0f3876653625ec5861ec-0.jpg);
+  background-image: url(images/background-image-dégradé.jpg.png);
   background-position: center;
   padding: 15vw 0vw 15vw 0vw;
   background-repeat: no-repeat;
