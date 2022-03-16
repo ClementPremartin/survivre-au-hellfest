@@ -21,3 +21,10 @@
     --secondary-color: #14AECC ;
     --light-alternative: #B2F7EF;
   }
+
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--light);
+}
