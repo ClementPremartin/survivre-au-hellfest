@@ -28,3 +28,9 @@ body {
     height: auto;
     background-color: var(--light);
 }
+
+.embedded {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0px;
+}
