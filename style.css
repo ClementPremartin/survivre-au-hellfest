@@ -11,7 +11,7 @@
     --light-alternative: #EBEAE8;
   }
 
-  [data-theme="dark"] {
+  [data-theme="kawaii"] {
     --title-font: 'Chewy', cursive;
     --header-font: 'Spinnaker', sans-serif;
     --common-font: 'Overpass', sans-serif;
@@ -27,4 +27,18 @@ body {
     width: 100%;
     height: auto;
     background-color: var(--light);
+}
+
+.headband {
+  display:flex;
+  justify-content: center;
+  font-family: var(--title-font);
+  color: var(--light-alternative);
+  font-size: 5vw;
+  background-image: url(https://www.nonfiction.fr/prximgsrv/crp/790/469/x/repo/e/6/e652a236046f0f3876653625ec5861ec-0.jpg);
+  background-position: center;
+  padding: 15vw 0vw 15vw 0vw;
+  background-repeat: no-repeat;
+  background-size: 100vw; 
+  background-color: var(--dark);
 }
