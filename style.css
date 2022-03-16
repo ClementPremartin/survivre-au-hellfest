@@ -44,8 +44,8 @@ body {
 .button {
   position: relative;
   background-color: white;
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   position: fixed;
   top: 5vh; 
