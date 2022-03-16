@@ -11,7 +11,7 @@
     --light-alternative: #EBEAE8;
   }
 
-  [data-theme="dark"] {
+  [data-theme="kawaii"] {
     --title-font: 'Chewy', cursive;
     --header-font: 'Spinnaker', sans-serif;
     --common-font: 'Overpass', sans-serif;
@@ -29,11 +29,25 @@ body {
     background-color: var(--light);
 }
 
+.headband {
+  display:flex;
+  justify-content: center;
+  font-family: var(--title-font);
+  color: var(--light-alternative);
+  font-size: 5vw;
+  background-image: url(images/background-image-dégradé.jpg.png);
+  background-position: center;
+  padding: 15vw 0vw 15vw 0vw;
+  background-repeat: no-repeat;
+  background-size: 100vw; 
+  background-color: var(--dark);
+}
 .embedded {
     display: flex;
     justify-content: center;
     margin: 1rem 0px;
 }
+
 
 /* Guillaume's Navbar */
 /* hamburger */
@@ -190,6 +204,7 @@ body {
 
 /* Guillaume's Navbar end */
 
+
 /* Logo */
 
 .logo {
@@ -204,3 +219,4 @@ body {
 }
 
 /* Logo end */
+
