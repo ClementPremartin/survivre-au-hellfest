@@ -92,7 +92,7 @@ body {
 }
 
 .item {
-  margin: 3rem;
+  margin: 2rem;
   font-size: 2rem;
 }
 
@@ -124,7 +124,7 @@ body {
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform: scale(80);
+  transform: scale(90);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
