@@ -42,3 +42,8 @@ body {
   background-size: 100vw; 
   background-color: var(--dark);
 }
+.embedded {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0px;
+}
