@@ -187,3 +187,16 @@ body {
 
 
 /* Guillaume's Navbar end */
+.wrong-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.wrong-page h2 {
+    font-family: var(--header-font);
+}
+.wrong-page p {
+    font-family: var(--common-font);
+}
+/* Lionel 404 */
