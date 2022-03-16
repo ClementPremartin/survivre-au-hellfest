@@ -216,16 +216,15 @@ body {
 
 /* CSS footer Clément Start */
 
-footer {
+.footer-class {
   background-color: var(--dark);
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 22%;
+  height: 25%;
   display: flex;
-  justify-content: flex-end;
-  
-  
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer-links {
@@ -233,5 +232,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--light);
 }
+img{
+  max-width: 30%;
+}
+
+/* CSS footer Clément End */
