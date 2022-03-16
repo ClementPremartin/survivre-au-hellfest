@@ -43,7 +43,7 @@ body {
 
 .button {
   position: relative;
-  background-color: white;
+  background-color: var(--light-alternative);
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -51,7 +51,7 @@ body {
   top: 5vh; 
   right: 5vw; 
   z-index: 2000;
-  box-shadow: 0 1rem 3rem black;
+  box-shadow: 0 3px 8px black;;
   text-align: center; 
   cursor: pointer;
 }
@@ -66,7 +66,7 @@ body {
   background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
   z-index: 1000;
   background-size: 60%;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1.5);
   opacity: 0.9;
 }
 
@@ -90,6 +90,7 @@ body {
   text-align: center;
   width: 100%;
   margin-top: 3.5rem;
+  font-family: var(--title-font);
 }
 
 .item {
@@ -104,7 +105,7 @@ body {
   font-weight: 300;
   padding: 1rem 2rem;
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(
     120deg,
@@ -119,7 +120,7 @@ body {
 
 .link:hover,
 .link:active {
-  color: #F06543;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -199,6 +200,7 @@ body {
   top: 5vh;
   left: 5vw;
   margin: 0;
+  box-shadow: 0 3px 8px black;
 }
 
 /* Logo end */
