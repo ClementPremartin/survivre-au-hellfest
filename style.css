@@ -67,6 +67,7 @@ body {
   z-index: 1000;
   background-size: 60%;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 0.9;
 }
 
 .nav {
@@ -88,18 +89,17 @@ body {
   list-style: none;
   text-align: center;
   width: 100%;
-  link: none;
 }
 
 .item {
   margin: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   padding: 1rem 2rem;
   color: black;
@@ -187,3 +187,17 @@ body {
 
 
 /* Guillaume's Navbar end */
+
+/* Logo */
+
+.logo {
+  border-radius: 50%;
+  width: 6rem;
+  position: absolute;
+  z-index: 2100;
+  top: 5vh;
+  left: 5vw;
+  margin: 0;
+}
+
+/* Logo end */
