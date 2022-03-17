@@ -117,7 +117,7 @@ body {
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 4vw;
   font-weight: 300;
   padding: 1rem 2rem;
   color: var(--dark);
