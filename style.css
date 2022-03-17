@@ -84,7 +84,7 @@ body, html {
   position: fixed;
   top: 5.5vh; 
   right: 5.5vw; 
-  background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
+  background-image: url("images/background-image-dégradé.jpg.png");
   z-index: 1000;
   background-size: 60%;
   transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1.5);
@@ -241,9 +241,10 @@ text-decoration: none;
   flex-direction: column;
   align-items: center;
   font-family: var(--header-font);
-  font-size: 40%;
-
+  font-size: 7px;
+  padding-right: 20px;
 }
+
 #logo-footer{
   max-width: 8em;
   border-radius: 50%;
@@ -253,7 +254,7 @@ text-decoration: none;
 .social-media {
   box-shadow: none;
   width: 40vw;
-  
+  max-width: 16em;
 }
 
 /* CSS footer Clément End */
