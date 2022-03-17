@@ -80,7 +80,7 @@ body {
   background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
   z-index: 1000;
   background-size: 60%;
-  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1.5);
+  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
 }
 
 .nav {
