@@ -71,16 +71,18 @@ body {
 }
 
 .background {
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 7.5vh; 
-  right: 7.5vw;
+  top: 5vh; 
+  right: 5vw;
   background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
   z-index: 1000;
-  background-size: 60%;
+  background-size: 45%;
   transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
+  text-align: center;
+  background-position: 100%;
 }
 
 .nav {
@@ -133,7 +135,7 @@ body {
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform:scale(100);
+  transform:scale(80);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
