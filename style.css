@@ -118,7 +118,7 @@ body {
   font-size: 2rem;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: black;
+  color: var(--dark);
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.4s;
