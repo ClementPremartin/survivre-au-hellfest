@@ -48,6 +48,111 @@ body {
     margin: 1rem 0px;
 }
 
+/*Aurore's Cards*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: "Metal Mania", sans-serif;
+    background-color: #D4CEBD;
+}
+
+
+a {
+    color: black;
+}
+
+.caption,
+h1 {
+    text-align: center;
+}
+
+.caption,
+h1 {
+    font-family: var(--title-font);
+    font-size: 2em;
+    padding: 10px 10px 0 10px;
+
+}
+
+
+.description {
+    font-size: 0.9em;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+    color: var(--dark);
+    font-family: var(--header-font);
+}
+
+.container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 3%;
+}
+
+.container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.container,
+.front,
+.back {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.front {
+    z-index: 2;
+    border-radius: 25px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    border-radius: 25px;
+}
+
+#content {
+    text-align: center;
+    color: var(--dark);
+}
+
+.card {
+    border-top-left-radius: 25px 25px;
+    border-top-right-radius: 25px 25px;
+    min-width: 55%;
+    max-height: 55%;
+    width: 100%;
+}
+ 
+
+ /*Aurore'cards end*/
+
 
 /* Guillaume's Navbar */
 /* hamburger */
@@ -199,6 +304,44 @@ body {
 
 /* Guillaume's Navbar end */
 
+/*Aurore's Headband descritpion*/
+
+.headband description {
+	background: linear-gradient(-0.25turn, #f4f4f4, #d6d6d6);
+}
+
+.paper {
+	padding: 18px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 5px 15px 30.4px grey;
+}
+
+#h1 {
+	font-weight: 800;
+	font-size: 54px;
+	letter-spacing: 2.11px;
+	font-family: 'Metal Mania', cursive;
+}
+
+b {
+	font-weight: 600;
+}
+
+#helpfulspell {
+	letter-spacing: 0.7px;
+	text-shadow: 0px 0px 3px;
+	color: goldenrod;
+}
+
+a {
+    color: #6495ED;
+}
+
+
+
+
+/*Aurore's Headband descritpion end*/
 
 /* Logo */
 
