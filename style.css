@@ -58,8 +58,8 @@ body {
 .button {
   position: relative;
   background-color: var(--light-alternative);
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   position: fixed;
   top: 5vh; 
@@ -71,8 +71,8 @@ body {
 }
 
 .background {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   position: fixed;
   top: 5vh; 
@@ -110,8 +110,8 @@ body {
 }
 
 .item {
-  margin: 1rem;
-  font-size: 2rem;
+  margin: 2%;
+  font-size: 5vh;
 }
 
 .link:link,
@@ -135,7 +135,7 @@ body {
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform:scale(80);
+  transform:scale(90);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
@@ -204,7 +204,7 @@ body {
 
 .logo {
   border-radius: 50%;
-  width: 6rem;
+  width: 5rem;
   position: fixed;
   z-index: 2100;
   top: 5vh;
