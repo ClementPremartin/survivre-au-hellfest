@@ -11,7 +11,7 @@
     --light-alternative: #EBEAE8;
   }
 
-  [data-theme="dark"] {
+  [data-theme="kawaii"] {
     --title-font: 'Chewy', cursive;
     --header-font: 'Spinnaker', sans-serif;
     --common-font: 'Overpass', sans-serif;
@@ -22,9 +22,427 @@
     --light-alternative: #B2F7EF;
   }
 
+* {margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: var(--light);
+  position: relative;
+}
+
+/* Css header Clément start */
+.headband {
+  display:flex;
+  justify-content: center;
+  font-family: var(--title-font);
+  color: var(--light-alternative);
+  font-size: 5vw;
+  background-image: url(images/background-image-dégradé.jpg.png);
+  background-position: center;
+  padding: 20vw 0vw 20vw 0vw;
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  background-color: var(--dark);
+} 
+
+/* Css header Clément End */
+
+.embedded {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0px;
+  }
+
+/*Aurore's Cards*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
     margin: 0;
-    width: 100%;
-    height: auto;
-    background-color: var(--light);
+    font-family: "Metal Mania", sans-serif;
+    background-color: #D4CEBD;
 }
+
+
+a {
+    color: black;
+}
+
+.caption,
+h1 {
+    text-align: center;
+}
+
+.caption,
+h1 {
+    font-family: var(--title-font);
+    font-size: 2em;
+    padding: 10px 10px 0 10px;
+
+}
+
+
+.description {
+    font-size: 0.9em;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+    color: var(--dark);
+    font-family: var(--header-font);
+}
+
+.container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 3%;
+}
+
+.container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.container,
+.front,
+.back {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.front {
+    z-index: 2;
+    border-radius: 25px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    border-radius: 25px;
+}
+
+#content {
+    text-align: center;
+    color: var(--dark);
+}
+
+.card {
+    border-top-left-radius: 25px 25px;
+    border-top-right-radius: 25px 25px;
+    min-width: 55%;
+    max-height: 55%;
+    width: 100%;
+}
+ 
+
+ /*Aurore'cards end*/
+
+
+/* Guillaume's Navbar */
+/* hamburger */
+.checkbox {
+  display: none;
+}
+
+.button {
+  position: relative;
+  background-color: var(--light-alternative);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1vh; 
+  right: 5vw; 
+  z-index: 2000;
+  box-shadow: 0 3px 8px black;;
+  text-align: center; 
+  cursor: pointer;
+}
+
+.background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1vh; 
+  right: 5vw;
+  background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
+  z-index: 1000;
+  background-size: 45%;
+  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
+  text-align: center;
+  background-position: 100%;
+}
+
+.nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -60vw;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s;
+}
+
+.list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: var(--title-font);
+}
+
+.item {
+  margin: 5vh;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  font-size: 6vw;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: var(--dark);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  font-weight: bold;
+}
+
+.link:hover,
+.link:active {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* functionality */
+.checkbox:checked ~ .background {
+  transform:scale(90);
+}
+.checkbox:checked ~ .nav {
+  opacity: 1;
+  width: 100%;
+  right: 0;
+}
+
+/*  */
+/* styling hamb ICON */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon,
+.icon::before,
+.icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: var(--primary-color);
+  display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.icon::before {
+  top: -0.8rem;
+}
+.icon::after {
+  top: 0.8rem;
+}
+
+.button:hover icon:before {
+  top: -1rem;
+}
+.button:hover icon::after {
+  top: 1rem;
+}
+
+.checkbox:checked + .button .icon {
+  background-color: transparent;
+}
+
+.checkbox:checked + .button .icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.checkbox:checked + .button .icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+
+/* Guillaume's Navbar end */
+
+/* CSS footer Clément Start */
+
+.footer-class {
+  
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(images/smoke.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+ 
+
+}
+
+.link2 {
+color: var(--light-alternative);
+text-decoration: none;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--header-font);
+  font-size: 7px;
+  padding-right: 20px;
+}
+
+#logo-footer{
+  max-width: 8em;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px black 
+}
+
+.social-media {
+  box-shadow: none;
+  width: 40vw;
+  max-width: 16em;
+  display: inline-block;
+}
+
+/* CSS footer Clément End */
+/*Aurore's Headband descritpion*/
+
+.headband description {
+	background: linear-gradient(-0.25turn, #f4f4f4, #d6d6d6);
+}
+
+.paper {
+	padding: 18px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 5px 15px 30.4px grey;
+}
+
+#h1 {
+	font-weight: 800;
+	font-size: 54px;
+	letter-spacing: 2.11px;
+	font-family: 'Metal Mania', cursive;
+}
+
+b {
+	font-weight: 600;
+}
+
+#helpfulspell {
+	letter-spacing: 0.7px;
+	text-shadow: 0px 0px 3px;
+	color: goldenrod;
+}
+
+a {
+    color: #6495ED;
+}
+
+
+
+
+/*Aurore's Headband descritpion end*/
+
+/* Logo */
+
+.logo {
+  border-radius: 50%;
+  width: 4rem;
+  position: fixed;
+  z-index: 2100;
+  top: 1vh;
+  left: 5vw;
+  margin: 0;
+  box-shadow: 0 3px 8px black;
+  text-transform: uppercase;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* Logo's animation*/
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(1);
+		-ms-transform:     translateY(1);
+		transform:         translateY(1);
+	}
+	40% {
+		-webkit-transform: translateY(-1rem);
+		-ms-transform:     translateY(-1rem);
+		transform:         translateY(-1rem);
+	}
+	60% {
+		-webkit-transform: translateY(-1.5rem);
+		-ms-transform:     translateY(-1.5rem);
+		transform:         translateY(-1.5rem);
+	}
+}
+
+.logo:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+/* Logo end */
