@@ -11,7 +11,7 @@
     --light-alternative: #EBEAE8;
   }
 
-  [data-theme="dark"] {
+  [data-theme="kawaii"] {
     --title-font: 'Chewy', cursive;
     --header-font: 'Spinnaker', sans-serif;
     --common-font: 'Overpass', sans-serif;
@@ -29,6 +29,19 @@ body {
     background-color: var(--light);
 }
 
+.headband {
+  display:flex;
+  justify-content: center;
+  font-family: var(--title-font);
+  color: var(--light-alternative);
+  font-size: 5vw;
+  background-image: url(images/background-image-dégradé.jpg.png);
+  background-position: center;
+  padding: 15vw 0vw 15vw 0vw;
+  background-repeat: no-repeat;
+  background-size: 100vw; 
+  background-color: var(--dark);
+}
 .embedded {
     display: flex;
     justify-content: center;
@@ -43,16 +56,11 @@ body {
 
 html,
 body {
-    margin: 5%;
+    margin: 0;
     font-family: "Metal Mania", sans-serif;
     background-color: #D4CEBD;
 }
 
-img {
-    min-width: 55%;
-    max-height: 55%;
-    width: 100%;
-}
 
 a {
     color: black;
@@ -65,7 +73,7 @@ h1 {
 
 .caption,
 h1 {
-    font-family: 'Metal Mania', cursive;
+    font-family: var(--title-font);
     font-size: 2em;
     padding: 10px 10px 0 10px;
 
@@ -76,6 +84,8 @@ h1 {
     font-size: 0.9em;
     padding: 0 20px 20px 20px;
     text-align: left;
+    color: var(--dark);
+    font-family: var(--header-font);
 }
 
 .container {
@@ -129,12 +139,17 @@ h1 {
 
 #content {
     text-align: center;
+    color: var(--dark);
 }
 
 .card {
     border-top-left-radius: 25px 25px;
     border-top-right-radius: 25px 25px;
- }
+    min-width: 55%;
+    max-height: 55%;
+    width: 100%;
+}
+ 
 
  /*Aurore'cards end*/
 
@@ -147,30 +162,32 @@ h1 {
 
 .button {
   position: relative;
-  background-color: white;
-  height: 5rem;
-  width: 5rem;
+  background-color: var(--light-alternative);
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   position: fixed;
   top: 5vh; 
   right: 5vw; 
   z-index: 2000;
-  box-shadow: 0 1rem 3rem black;
+  box-shadow: 0 3px 8px black;;
   text-align: center; 
   cursor: pointer;
 }
 
 .background {
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 5.5vh; 
-  right: 5.5vw; 
+  top: 5vh; 
+  right: 5vw;
   background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
   z-index: 1000;
-  background-size: 60%;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  background-size: 45%;
+  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
+  text-align: center;
+  background-position: 100%;
 }
 
 .nav {
@@ -192,43 +209,38 @@ h1 {
   list-style: none;
   text-align: center;
   width: 100%;
-  link: none;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: var(--title-font);
 }
 
 .item {
-  margin: 3rem;
-  font-size: 3rem;
+  margin: 1rem;
+  font-size: 2rem;
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 4vw;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: black;
-  text-decoration: underline;
+  color: var(--dark);
+  text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    white 50%
-  );
-  background-size: 220%;
   transition: all 0.4s;
   font-weight: bold;
 }
 
 .link:hover,
 .link:active {
-  color: #F06543;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform: scale(80);
+  transform:scale(80);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
@@ -250,7 +262,7 @@ h1 {
 .icon::after {
   width: 3rem;
   height: 2px;
-  background-color: gray;
+  background-color: var(--primary-color);
   display: inline-block;
 }
 
@@ -326,8 +338,57 @@ a {
     color: #6495ED;
 }
 
-p {
- font-family: "Metal Mania", sans-serif; ;
-}
+
+
 
 /*Aurore's Headband descritpion end*/
+
+/* Logo */
+
+.logo {
+  border-radius: 50%;
+  width: 6rem;
+  position: fixed;
+  z-index: 2100;
+  top: 5vh;
+  left: 5vw;
+  margin: 0;
+  box-shadow: 0 3px 8px black;
+  text-transform: uppercase;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* Logo's animation*/
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(1);
+		-ms-transform:     translateY(1);
+		transform:         translateY(1);
+	}
+	40% {
+		-webkit-transform: translateY(-1rem);
+		-ms-transform:     translateY(-1rem);
+		transform:         translateY(-1rem);
+	}
+	60% {
+		-webkit-transform: translateY(-1.5rem);
+		-ms-transform:     translateY(-1.5rem);
+		transform:         translateY(-1.5rem);
+	}
+}
+
+.logo:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+/* Logo end */
