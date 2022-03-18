@@ -71,17 +71,18 @@ body {
 }
 
 .background {
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 5.5vh; 
-  right: 5.5vw; 
+  top: 5vh; 
+  right: 5vw;
   background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
   z-index: 1000;
-  background-size: 60%;
-  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1.5);
-  opacity: 0.9;
+  background-size: 45%;
+  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
+  text-align: center;
+  background-position: 100%;
 }
 
 .nav {
@@ -103,31 +104,25 @@ body {
   list-style: none;
   text-align: center;
   width: 100%;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   font-family: var(--title-font);
 }
 
 .item {
-  margin: 2rem;
+  margin: 1rem;
   font-size: 2rem;
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 4vw;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: black;
+  color: var(--dark);
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    white 50%
-  );
-  background-size: 220%;
   transition: all 0.4s;
   font-weight: bold;
 }
@@ -140,7 +135,7 @@ body {
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform: scale(90);
+  transform:scale(80);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
@@ -162,7 +157,7 @@ body {
 .icon::after {
   width: 3rem;
   height: 2px;
-  background-color: gray;
+  background-color: var(--primary-color);
   display: inline-block;
 }
 
@@ -210,12 +205,47 @@ body {
 .logo {
   border-radius: 50%;
   width: 6rem;
-  position: absolute;
+  position: fixed;
   z-index: 2100;
   top: 5vh;
   left: 5vw;
   margin: 0;
   box-shadow: 0 3px 8px black;
+  text-transform: uppercase;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* Logo's animation*/
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(1);
+		-ms-transform:     translateY(1);
+		transform:         translateY(1);
+	}
+	40% {
+		-webkit-transform: translateY(-1rem);
+		-ms-transform:     translateY(-1rem);
+		transform:         translateY(-1rem);
+	}
+	60% {
+		-webkit-transform: translateY(-1.5rem);
+		-ms-transform:     translateY(-1.5rem);
+		transform:         translateY(-1.5rem);
+	}
+}
+
+.logo:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
 }
 
 /* Logo end */
