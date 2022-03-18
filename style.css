@@ -42,9 +42,9 @@ body, html {
   font-size: 5vw;
   background-image: url(images/background-image-dégradé.jpg.png);
   background-position: center;
-  padding: 15vw 0vw 15vw 0vw;
+  padding: 20vw 0vw 20vw 0vw;
   background-repeat: no-repeat;
-  background-size: 100vw; 
+  background-size: 100%; 
   background-color: var(--dark);
 } 
 
