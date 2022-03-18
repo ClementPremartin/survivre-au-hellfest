@@ -217,10 +217,10 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-around;
- background-image: url(images/smoke.jpg);
- background-position: bottom;
- background-repeat: no-repeat;
- background-size: 100vw;
+  background-image: url(images/smoke.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100vw;
  
 
 }
@@ -243,13 +243,14 @@ text-decoration: none;
 #logo-footer{
   max-width: 8em;
   border-radius: 50%;
-  box-shadow: 1px 1px 20px black
+  box-shadow: 1px 1px 20px black 
 }
 
 .social-media {
   box-shadow: none;
   width: 40vw;
   max-width: 16em;
+  display: inline-block;
 }
 
 /* CSS footer Clément End */
