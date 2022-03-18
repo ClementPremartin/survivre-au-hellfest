@@ -163,11 +163,11 @@ h1 {
 .button {
   position: relative;
   background-color: var(--light-alternative);
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 5vh; 
+  top: 1vh; 
   right: 5vw; 
   z-index: 2000;
   box-shadow: 0 3px 8px black;;
@@ -176,11 +176,11 @@ h1 {
 }
 
 .background {
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 5vh; 
+  top: 1vh; 
   right: 5vw;
   background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
   z-index: 1000;
@@ -215,14 +215,13 @@ h1 {
 }
 
 .item {
-  margin: 1rem;
-  font-size: 2rem;
+  margin: 5vh;
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: 300;
   padding: 1rem 2rem;
   color: var(--dark);
@@ -240,7 +239,7 @@ h1 {
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform:scale(80);
+  transform:scale(90);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
@@ -347,10 +346,10 @@ a {
 
 .logo {
   border-radius: 50%;
-  width: 6rem;
+  width: 4rem;
   position: fixed;
   z-index: 2100;
-  top: 5vh;
+  top: 1vh;
   left: 5vw;
   margin: 0;
   box-shadow: 0 3px 8px black;
