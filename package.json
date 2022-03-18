@@ -4,6 +4,7 @@
   "description": "sources\r image background h1 nonfiction.fr",
   "main": "script.js",
   "scripts": {
+    "validate": "w3c-html-validator",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
