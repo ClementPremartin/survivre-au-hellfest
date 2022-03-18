@@ -58,11 +58,11 @@ body {
 .button {
   position: relative;
   background-color: var(--light-alternative);
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 5vh; 
+  top: 1vh; 
   right: 5vw; 
   z-index: 2000;
   box-shadow: 0 3px 8px black;;
@@ -71,11 +71,11 @@ body {
 }
 
 .background {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 5vh; 
+  top: 1vh; 
   right: 5vw;
   background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
   z-index: 1000;
@@ -110,14 +110,13 @@ body {
 }
 
 .item {
-  margin: 2%;
-  font-size: 5vh;
+  margin: 5vh;
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: 300;
   padding: 1rem 2rem;
   color: var(--dark);
@@ -204,10 +203,10 @@ body {
 
 .logo {
   border-radius: 50%;
-  width: 5rem;
+  width: 4rem;
   position: fixed;
   z-index: 2100;
-  top: 5vh;
+  top: 1vh;
   left: 5vw;
   margin: 0;
   box-shadow: 0 3px 8px black;
