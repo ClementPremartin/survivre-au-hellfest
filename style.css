@@ -22,13 +22,18 @@
     --light-alternative: #B2F7EF;
   }
 
-body {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    background-color: var(--light);
+* {margin: 0;
+  padding: 0;
 }
 
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: var(--light);
+  position: relative;
+}
+
+/* Css header Clément start */
 .headband {
   display:flex;
   justify-content: center;
@@ -41,12 +46,15 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw; 
   background-color: var(--dark);
-}
+} 
+
+/* Css header Clément End */
+
 .embedded {
     display: flex;
     justify-content: center;
     margin: 1rem 0px;
-}
+  }
 
 /*Aurore's Cards*/
 
@@ -303,6 +311,53 @@ h1 {
 
 /* Guillaume's Navbar end */
 
+/* CSS footer Clément Start */
+
+.footer-class {
+  
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(images/smoke.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+ 
+
+}
+
+.link2 {
+color: var(--light-alternative);
+text-decoration: none;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--header-font);
+  font-size: 7px;
+  padding-right: 20px;
+}
+
+#logo-footer{
+  max-width: 8em;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px black 
+}
+
+.social-media {
+  box-shadow: none;
+  width: 40vw;
+  max-width: 16em;
+  display: inline-block;
+}
+
+/* CSS footer Clément End */
 /*Aurore's Headband descritpion*/
 
 .headband description {
