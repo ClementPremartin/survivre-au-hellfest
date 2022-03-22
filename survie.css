@@ -1,0 +1,35 @@
+:root {
+    --title-font: 'Metal Mania', cursive;
+    --header-font: 'Fira Sans', sans-serif;
+    --common-font: 'Prompt', sans-serif;
+    --light: #D4CEBD;
+    --dark: #171718;
+    --primary-color: #F09D51;
+    --secondary-color: #F06543 ;
+    --light-alternative: #EBEAE8;
+  }
+
+  [data-theme="kawaii"] {
+    --title-font: 'Chewy', cursive;
+    --header-font: 'Spinnaker', sans-serif;
+    --common-font: 'Overpass', sans-serif;
+    --light: #EFF7F6;
+    --dark: #EC3F95;
+    --primary-color: #F7D6E0;
+    --secondary-color: #14AECC ;
+    --light-alternative: #B2F7EF;
+  }
+
+.bandeau-survie {
+    background-image: url("./images/backgrndSurvie.jpg");
+    background-position: bottom;
+    width: 100%;
+    height: max-content;
+    padding: 20vw 0vw 20vw 0vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: var(--light-alternative);
+}
+
+   
+  
