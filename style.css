@@ -485,9 +485,6 @@ h2 {
   color: var(--dark);
 }
 
-
-
-
 .map-sur-place {
   display:flex;
   justify-content: center;
@@ -497,10 +494,6 @@ h2 {
   background-size: 100%;
   padding: 35%;
 } 
-
-* {
-  box-sizing: border-box;
-}
 
 .caption-sur-place,
 h1 {
@@ -516,7 +509,6 @@ h1 {
 .description-sur-place {
   font-size: 0.9em;
   padding: 0 20px 20px 20px;
-  text-align: left;
   color: var(--dark);
   font-family: var(--header-font);
 }
@@ -525,7 +517,6 @@ h1 {
   perspective: 100%;
   display:inline-block;
   margin: 3%;
-  justify-content:space-evenly;
 }
 
 .container-sur-place:hover .flipper-sur-place {
@@ -535,7 +526,6 @@ h1 {
 .container-sur-place:hover .back-sur-place {
   height: auto;
   position: relative;
-  margin-bottom: 5%;
 }
 
 .container-sur-place,
@@ -550,16 +540,13 @@ h1 {
 .flipper-sur-place {
   transition: 0.6s;
   transform-style: preserve-3d;
-  position: relative;
-
+  margin-top: 10%;
 }
 
 .front-sur-place,
 .back-sur-place {
   backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
   width: 250px;
   height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -580,6 +567,7 @@ h1 {
 #content-sur-place {
   text-align: center;
   color: var(--dark);
+  margin-bottom: 10%;
 }
 
 .card-sur-place {
