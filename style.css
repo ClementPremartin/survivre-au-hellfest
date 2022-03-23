@@ -401,11 +401,10 @@ p{
   height: 30px;
 }
 
-.container contact {
-	max-width:400px;
-	width:100%;
+.container-contact {
+  max-width: 900px;	
+  width:100%;
 	position:relative;
-  background-image: url('assets/img-masque.jpg');
   border-radius: 20px;
   
 }
@@ -417,6 +416,9 @@ p{
 	padding:25px;
 	margin:80px 0;
   margin-top: 160px;
+  border-radius: 15px;
+  border: 4mm ridge #171718;
+
 }
 
 
@@ -514,5 +516,20 @@ label.error{
 input.error{
 	border-color: darkred !important;
 }
+
+.newslatter{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+}
+
+button {
+  background-color: rgb(0 0 0 / 20%);
+  border-radius: 5px;
+}
+
+
 
 /* Aurore - contact-end */
