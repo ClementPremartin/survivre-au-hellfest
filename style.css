@@ -749,6 +749,9 @@ input[type=submit]:hover{
   .altnav .altlogo {
     max-height: 40px;
   }
+  .img-magnifier-glass {
+    display: none;
+  }
 }
 
 /* direction End Lionel */
@@ -884,3 +887,20 @@ h1 {
 
 /* Contact Aurore End */
 
+/* Test Lionel Zoom map */
+.img-magnifier-container {
+  position:relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+/* Test Lionel Zoom map end */
