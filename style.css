@@ -471,10 +471,7 @@ p {
   padding-top: 30px;
   font-family: var(--common-font);
   font-size: 1.1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-self: center;
+  
   
 }
 
