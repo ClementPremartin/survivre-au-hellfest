@@ -74,36 +74,51 @@
 <div class="liste-survie" id="liste-survie-id">
   <h2>Checklist</h2>
   <ul class="stuff-survie">
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="toile-de-tente" name="toile-de-tente">
       <label for="toile-de-tente">Toile de Tente</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="sac-de-couchage" name="sac-de-couchage">
       <label for="sac-de-couchage">Sac de couchage</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="chaussures" name="chaussures">
       <label for="chaussures">Chaussures</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="lunettes-de-soleil" name="lunette-de-soleil">
       <label for="lunette-de-soleil">Lunette de Soleil</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="bouteille" name="bouteille">
       <label for="bouteille">Bouteille</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="trousse-de-secours" name="trousse-de-secours">
       <label for="trousse-de-secours">Trousse de secours</label>
-    </div>
+    </li>
 </div>
+
+
+<div class="interaction">
+ 
+  <div id="add-element">
+    <label for="element"></label>
+    <input type="text" name="element" id="element" placeholder="Prendre des carottes">
+  </div>
+  
+  <div id="submit">
+    <input type="submit" value="Ajoute un truc!">
+  </div>
+
+</div>  
+
 
 <div class="video-reference-survie">
   
@@ -136,6 +151,8 @@
   </div>
 </footer>
 <!-- Clément - Footer end -->
+
+<script src="script.js"></script>
 
 </body>
 </html>

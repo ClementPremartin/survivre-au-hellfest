@@ -598,6 +598,8 @@ p {
 
 .stuff-survie {
   padding-left: 18px;
+  list-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: var(--common-font);
   font-size: 1.2em;
   margin-left: 5%;
@@ -608,17 +610,54 @@ p {
   background: linear-gradient(rgba(250, 250, 250, 0.5), rgba(255,255,255,.5)), url("./images/Backgroundpaper.jpg")
 }
 
+.stuff {
+  padding:1.5%;
+  font-size: 1.5rem;
+}
 
-h2, h3 {
+h2, .trousse-de-secours {
   padding-bottom: 30px;
-  font-family: var(--header-font);
-  font-size: 2em;
+  font-family: var(--title-font);
+  font-size: 7vw;
   padding-left: 16px;
   padding-top: 25px;
   display: flex;
   justify-content: flex-start;
 
 }
+
+.interaction {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+#add-element, #submit {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+#add-element {
+  height: 50px;
+  
+}
+
+input[type=submit] {
+  height: 90px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  font: var(--common-font);
+  color: var(--light-alternative);
+  background:var(--dark)
+   
+}
+
+input[type=submit]:hover{
+  background: var(--primary-color);
+  color: var(--dark);
+}
+
 .youtube-link-survie {
  display: flex;
  justify-content: center;

@@ -24,3 +24,18 @@ select.addEventListener('change', (event) => {
         bus.style.order = 3;
     }
 });
+
+
+const addSomething = document.querySelector("#add-element");
+const toDoInput = document.querySelector("#element");
+const toDoList = document.querySelector("#submit");
+
+addSomething.onsubmit = function (event) { event.preventDefault();
+
+const newToDo = document.createElement("li");
+newToDo.innerHTML = toDoInput.value;
+toDoList.appendChild("newToDo");
+toDoInput.value = "";
+};
+
+
