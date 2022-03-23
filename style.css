@@ -42,9 +42,9 @@ body, html {
   font-size: 5vw;
   background-image: url(images/background-image-dégradé.jpg.png);
   background-position: center;
-  padding: 20vw 0vw 20vw 0vw;
+  padding: 15vw 0vw 15vw 0vw;
   background-repeat: no-repeat;
-  background-size: 100%; 
+  background-size: 100vw; 
   background-color: var(--dark);
 } 
 
@@ -446,3 +446,27 @@ a {
 }
 
 /* Logo end */
+
+
+/* survivre au hellFest Start Clément */
+
+/* survivre au hellFest End Clément */
+
+
+
+/* direction Start Lionel */
+
+/* direction End Lionel */
+
+
+
+/* Sur place Start Guillaume */
+
+/* Sur place Start Guillaume */
+
+
+
+/* C ontact Aurore Start */
+
+/* C ontact Aurore End */
+
