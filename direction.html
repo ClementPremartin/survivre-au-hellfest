@@ -37,37 +37,39 @@
 </nav>
 
 <!--Header-->
-<div class = headband>
+<div class = headband id="directionHeadband">
   <h1>Se rendre au Hellfest</h1>
 </div>
 
 
 <!-- Cards with options -->
-<label for="orderby">Classer par:</label>
-<select name="orderby" id="orderby">
-	<option value="price">Du moins cher au plus cher</option>
-	<option value="quickness">Du plus rapide au moins rapide</option>
-	<option value="easyness">Du plus pratique au moins pratique</option>
-</select>
+<div class="selectionContainer">
+    <label for="orderby">Classer par:  </label>
+  <select name="orderby" id="orderby">
+	  <option value="price">Du moins cher au plus cher</option>
+	  <option value="quickness">Du plus rapide au moins rapide</option>
+	  <option value="easyness">Du plus pratique au moins pratique</option>
+  </select>
+</div>
+
 
 <div id="content">
-  <div class="container">
+  <div class="container" id="plane">
       <div class="flipper">
           <div class="front">
               <img class= "card" src="images/plane.jpg" alt="sac à dos ">
               <p class="caption">Avion</p>
           </div>
           <div class="back">
-              <h1>Required</h1> 
+              <h1>Running for the plane</h1> 
 
-              <p class="description">Lorem ipsum dolor sit amet. Sit placeat quod sed rerum nesciunt et iusto
-                  assumenda ex quos incidunt. Vel molestiae quia et magni assumenda aut repellat sit tempore sunt
-                  aut
-                  illo deleniti.</p>
+              <p class="description">L’Aéroport Nantes Atlantique a le plaisir de vous accueillir aux couleurs du Hellfest.
+
+                Une signalétique et un cheminement dédiés seront mis en place pour vous orienter vers les navettes ou taxis qui vous permettront de rejoindre le festival facilement.</p>
           </div>
       </div>
   </div>
-  <div class="container">
+  <div class="container" id="train">
       <div class="flipper">
           <div class="front">
               <img class="card" src="images/train.jpg"
@@ -75,15 +77,14 @@
               <p class="caption">Train</p>
           </div>
           <div class="back">
-              <h1>Go to hell</h1>
-              <p class="description">Lorem ipsum dolor sit amet. Sit placeat quod sed rerum nesciunt et iusto
-                  assumenda ex quos incidunt. Vel molestiae quia et magni assumenda aut repellat sit tempore sunt
-                  aut
-                  illo deleniti.</p>
+              <h1>Ghost Train</h1>
+              <p class="description">Vous détenez un ticket d’entrée au festival et vous souhaitez venir en train : en partenariat avec la Région des Pays de la Loire et en collaboration avec la SNCF, une tarification préférentielle, le “Billet Live” a été mise en place pour assurer vos déplacements en train ou en autocar.
+
+                Trajet Aller OU Retour de n’importe quelle gare des Pays de la Loire à Clisson à 5€ (maximum) par personne et par trajet (offre valable pour l’aller à partir du jeudi 16 juin et valable pour le retour jusqu’au lundi 27 Juin)</p>
           </div>
       </div>
   </div>
-  <div class="container">
+  <div class="container" id="bus">
       <div class="flipper">
           <div class="front">
               <img class="card" src="images/bus.jpg"
@@ -91,16 +92,12 @@
               <p class="caption">Bus</p>
           </div>
           <div class="back">
-              <h1>Le heavy m'étale</h1>
-              <p class="description">Lorem ipsum dolor sit amet. Sit placeat quod sed rerum nesciunt et iusto
-                  assumenda ex quos incidunt. Vel molestiae quia et magni assumenda aut repellat sit tempore sunt
-                  aut
-                  illo
-                  deleniti.</p>
+              <h1>Wheels of fire</h1>
+              <p class="description">Les détenteurs de Pack BUS by Ontours doivent se présenter à la montée du bus avec leur carte d’identité et leur ticket Hellfest (imprimé ou sur smartphone) pour le scan de contrôle. Ce même ticket sera demandé à l’entrée du festival, conservez le précieusement jusqu’à votre retour complet à la maison. </p>
           </div>
       </div>
   </div>
-  <div class="container">
+  <div class="container" id="carpool">
     <div class="flipper">
         <div class="front">
             <img class="card" src="images/carpool.jpg"
@@ -108,15 +105,11 @@
             <p class="caption">Covoit</p>
         </div>
         <div class="back">
-            <h1>Le heavy m'étale</h1>
-            <p class="description">Lorem ipsum dolor sit amet. Sit placeat quod sed rerum nesciunt et iusto
-                assumenda ex quos incidunt. Vel molestiae quia et magni assumenda aut repellat sit tempore sunt
-                aut
-                illo
-                deleniti.</p>
+            <h1>Highway to hell</h1>
+            <p class="description">Cette année avec la double édition, le Hellfest met en place un nouveau système de parking officiel gratuits afin de faciliter la circulation et d’empêcher le stationnement sauvage dans Clisson.</p>
         </div>
     </div>
-</div>
+  </div>
 </div>
 
 
@@ -126,7 +119,7 @@
   <div class="paper">
       <div id="h1">Navettes </div>
         <p>
-          Navette Train
+          <h2>Navette Train</h2>
 Si vous êtes un campeur, la navette est comprise dans votre billet Nuitée camping les jours de festival pour accéder au site du Hellfest. Les navettes sont également disponibles pour les arrivées et départ du site lorsque vous arrivez par train.
         </p>
      </div>
