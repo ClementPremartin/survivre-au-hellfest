@@ -360,7 +360,7 @@ text-decoration: none;
 /* CSS footer Clément End */
 /*Aurore's Headband descritpion*/
 
-.headband description {
+.headband-description {
 	background: linear-gradient(-0.25turn, #f4f4f4, #d6d6d6);
 }
 
@@ -449,8 +449,8 @@ a {
 
 
 /* survivre au hellFest Start Clément */
-.bandeau-survie {
-  background-image: url("./images/backgrndSurvie.jpg");
+#bandeau-survie {
+  background-image: url("./images/backgrndSurviedégradé.png");
   background-position: bottom;
   width: 100%;
   height: max-content;
@@ -458,6 +458,10 @@ a {
   background-size: 100%;
   background-repeat: no-repeat;
   color: var(--light-alternative);
+}
+
+p {
+  font-family: var(--common-font);
 }
 
  
