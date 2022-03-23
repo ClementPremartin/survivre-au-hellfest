@@ -635,6 +635,135 @@ button {
 
 /* Sur place Start Guillaume */
 
+.headband-sur-place {
+  display:flex;
+  justify-content: center;
+  font-family: var(--title-font);
+  color: var(--light-alternative);
+  font-size: 5vw;
+  background-image: url("https://www.hellfest.fr/_nuxt/image/58a6fc.webp");
+  background-position: center;
+  padding: 15vw 0vw 15vw 0vw;
+  background-repeat: no-repeat;
+  background-size: 100vw; 
+  background-color: var(--dark);
+}
+
+.h2-sur-place, 
+h2 {
+  font-size: 7vw;
+  margin-top: 2vw;
+  text-align: center;
+  font-family: var(--title-font);
+  color: var(--dark);
+}
+
+.map-sur-place {
+  display:flex;
+  justify-content: center;
+  background-image: url(https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/13411741_10153556450452536_1705821655704452280_o.jpg?_nc_cat=109&ccb=1-5&_nc_sid=9267fe&_nc_ohc=mB0dKgrYMnkAX9Buk8C&_nc_ht=scontent-cdt1-1.xx&oh=00_AT_AN1J4m2sL0VDXzkbti8oR4Bo171vic5SO0yN7G2uSZg&oe=62607657);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 35%;
+} 
+
+.caption-sur-place,
+h1 {
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 2em;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 1rem;
+}
+
+
+
+.description-sur-place {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  color: var(--dark);
+  font-family: var(--header-font);
+}
+
+.container-sur-place {
+  perspective: 100%;
+  display:inline-block;
+  margin: 3%;
+}
+
+.container-sur-place:hover .flipper-sur-place {
+  transform: rotateY(180deg);
+}
+
+.container-sur-place:hover .back-sur-place {
+  height: auto;
+  position: relative;
+}
+
+.container-sur-place,
+.front-sur-place,
+.back-sur-place {
+  width: 250px;
+  height: 250px;
+}
+
+
+
+.flipper-sur-place {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  margin-top: 10%;
+}
+
+.front-sur-place,
+.back-sur-place {
+  backface-visibility: hidden;
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.front-sur-place {
+  z-index: 2;
+  border-radius: 25px;
+}
+
+.back-sur-place {
+  transform: rotateY(180deg);
+  border-radius: 25px;
+}
+
+#content-sur-place {
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 10%;
+}
+
+.card-sur-place {
+  border-top-left-radius: 25px 25px;
+  border-top-right-radius: 25px 25px;
+  min-width: 55%;
+  max-height: 55%;
+  width: 100%;
+}
+
+
+
+.Video-video[data-lazyload=loaded][data-v-13c7e8f7] {
+  opacity: 1;
+}
+
+.Video-video[data-v-13c7e8f7] {
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(.25,.46,.45,.94);
+}
+
 /* Sur place Start Guillaume */
 
 
