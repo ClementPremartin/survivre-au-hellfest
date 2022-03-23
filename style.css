@@ -471,15 +471,25 @@ p {
   
 }
 
+.liste-survie {
+  padding-left: 18px;
+}
+
+.stuff {
+  list-style: none;
+  font-family: var(--common-font);
+}
+
 h2 {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   font-size: 2em;
 }
 .youtube-link-survie {
- border-radius: 0.5vw;
- background-color: var(--dark);
  display: flex;
  justify-content: center;
+ height: 50vw;
+ max-height: 500px;
+ max-width:1000px ;
 }
  
 
