@@ -462,13 +462,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding:18px;
-  
+  padding-bottom: 5%;
 }
 
 .stuff-survie {
   padding-left: 18px;
-  margin-top: 30px;
   font-family: var(--common-font);
   font-size: 1.1em;
   margin-left: 5%;
