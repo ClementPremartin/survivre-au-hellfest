@@ -401,10 +401,12 @@ p{
   height: 30px;
 }
 
-.container {
+.container contact {
 	max-width:400px;
 	width:100%;
 	position:relative;
+  background-image: url('assets/img-masque.jpg');
+  border-radius: 20px;
   
 }
 
