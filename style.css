@@ -754,6 +754,28 @@ input[type=submit]:hover{
   }
 }
 
+.wrong-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.wrong-page h2 {
+  font-family: var(--header-font);
+  z-index: 1;
+  position: relative;
+}
+.wrong-page p {
+  font-family: var(--common-font);
+  z-index: 1;
+  position: relative;
+}
+.error404 {
+  position: relative;
+  width: 80%;
+  margin-top: -80px;
+  align-self: flex-end;
+}
 /* direction End Lionel */
 
 
