@@ -664,24 +664,15 @@ button {
     max-height: 40px;
   }
 }
+
 /* direction End Lionel */
 
 
 
 /* Sur place Start Guillaume */
 
-.headband-sur-place {
-  display:flex;
-  justify-content: center;
-  font-family: var(--title-font);
-  color: var(--light-alternative);
-  font-size: 5vw;
+#surplace-headband {
   background-image: url("https://www.hellfest.fr/_nuxt/image/58a6fc.webp");
-  background-position: center;
-  padding: 15vw 0vw 15vw 0vw;
-  background-repeat: no-repeat;
-  background-size: 100vw; 
-  background-color: var(--dark);
 }
 
 .h2-sur-place, 
