@@ -449,6 +449,18 @@ a {
 
 
 /* survivre au hellFest Start Clément */
+.bandeau-survie {
+  background-image: url("./images/backgrndSurvie.jpg");
+  background-position: bottom;
+  width: 100%;
+  height: max-content;
+  padding: 20vw 0vw 20vw 0vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: var(--light-alternative);
+}
+
+ 
 
 /* survivre au hellFest End Clément */
 
