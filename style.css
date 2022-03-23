@@ -464,6 +464,23 @@ p {
   font-family: var(--common-font);
 }
 
+.video-reference-survie {
+  display: flex;
+  flex-direction: column;
+  padding:18px;
+  
+}
+
+h2 {
+  padding-bottom: 40px;
+  font-size: 2em;
+}
+.youtube-link-survie {
+ border-radius: 0.5vw;
+ background-color: var(--dark);
+ display: flex;
+ justify-content: center;
+}
  
 
 /* survivre au hellFest End Clément */
