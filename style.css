@@ -462,6 +462,20 @@ a {
 
 /* Sur place Start Guillaume */
 
+.headband-sur-place {
+  display:flex;
+  justify-content: center;
+  font-family: var(--title-font);
+  color: var(--light-alternative);
+  font-size: 5vw;
+  background-image: url("https://www.hellfest.fr/_nuxt/image/58a6fc.webp");
+  background-position: center;
+  padding: 15vw 0vw 15vw 0vw;
+  background-repeat: no-repeat;
+  background-size: 100vw; 
+  background-color: var(--dark);
+}
+
 .h2-sur-place, 
 h2 {
   font-size: 7vw;
@@ -481,7 +495,7 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 40%;
+  padding: 35%;
 } 
 
 * {
@@ -521,6 +535,7 @@ h1 {
 .container-sur-place:hover .back-sur-place {
   height: auto;
   position: relative;
+  margin-bottom: 5%;
 }
 
 .container-sur-place,
@@ -574,6 +589,20 @@ h1 {
   max-height: 55%;
   width: 100%;
 }
+
+
+
+.Video-video[data-lazyload=loaded][data-v-13c7e8f7] {
+  opacity: 1;
+}
+
+.Video-video[data-v-13c7e8f7] {
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(.25,.46,.45,.94);
+}
+
 
 
 /*Aurore'cards end*/
