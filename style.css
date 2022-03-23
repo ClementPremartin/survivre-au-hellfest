@@ -462,6 +462,132 @@ a {
 
 /* Sur place Start Guillaume */
 
+.h2-sur-place, 
+h2 {
+  font-size: 7vw;
+  margin-top: 2vw;
+  text-align: center;
+  font-family: var(--title-font);
+  color: var(--dark);
+}
+
+
+
+
+.map-sur-place {
+  display:flex;
+  justify-content: center;
+  background-image: url(https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/13411741_10153556450452536_1705821655704452280_o.jpg?_nc_cat=109&ccb=1-5&_nc_sid=9267fe&_nc_ohc=mB0dKgrYMnkAX9Buk8C&_nc_ht=scontent-cdt1-1.xx&oh=00_AT_AN1J4m2sL0VDXzkbti8oR4Bo171vic5SO0yN7G2uSZg&oe=62607657);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 40%;
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Metal Mania", sans-serif;
+  background-color: #D4CEBD;
+}
+
+
+a {
+  color: black;
+}
+
+.caption-sur-place,
+h1 {
+  text-align: center;
+}
+
+.caption,
+h1 {
+  font-family: var(--title-font);
+  font-size: 2em;
+  padding: 10px 10px 0 10px;
+
+}
+
+
+.description {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+  color: var(--dark);
+  font-family: var(--header-font);
+}
+
+.container {
+  perspective: 1000px;
+  display: inline-block;
+  margin: 3%;
+}
+
+.container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.container,
+.front,
+.back {
+  width: 250px;
+  height: 250px;
+}
+
+
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.front {
+  z-index: 2;
+  border-radius: 25px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  border-radius: 25px;
+}
+
+#content {
+  text-align: center;
+  color: var(--dark);
+}
+
+.card {
+  border-top-left-radius: 25px 25px;
+  border-top-right-radius: 25px 25px;
+  min-width: 55%;
+  max-height: 55%;
+  width: 100%;
+}
+
+
+/*Aurore'cards end*/
+
+
 /* Sur place Start Guillaume */
 
 
