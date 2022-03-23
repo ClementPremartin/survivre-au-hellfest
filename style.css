@@ -451,6 +451,7 @@ a {
 /* survivre au hellFest Start Clément */
 #bandeau-survie {
   background-image: url("./images/backgrndSurviedégradé.png");
+
 }
 
 p {
@@ -471,8 +472,6 @@ p {
   font-family: var(--common-font);
   font-size: 1.1em;
 }
-
-
 
 h2, h3 {
   padding-bottom: 30px;
