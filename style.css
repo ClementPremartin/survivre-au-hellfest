@@ -450,11 +450,13 @@ a {
 /* direction Start Lionel */
 #orderby {
   text-align: center;
+
 }
 .selectionContainer {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
+  font-family: var(--header-font);
 }
 .selectionContainer label {
   padding-right: 10px;
