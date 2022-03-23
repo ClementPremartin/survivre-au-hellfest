@@ -35,22 +35,120 @@
       <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
     </ul>
 </nav>
-<!-- Guillaume - Navbar end-->
-<!--Header-->
 
+<!--Header-->
+<div class = headband id="directionHeadband">
+  <h1>Se rendre au Hellfest</h1>
+</div>
 
 
 <!-- Cards with options -->
+<div class="selectionContainer">
+    <label for="orderby">Classer par:  </label>
+  <select name="orderby" id="orderby">
+	  <option value="price">Du moins cher au plus cher</option>
+	  <option value="quickness">Du plus rapide au moins rapide</option>
+	  <option value="easyness">Du plus pratique au moins pratique</option>
+  </select>
+</div>
 
+
+<div id="content">
+  <div class="container" id="plane">
+      <div class="flipper">
+          <div class="front">
+              <img class= "card" src="images/plane.jpg" alt="sac à dos ">
+              <p class="caption">Avion</p>
+          </div>
+          <div class="back">
+              <h1>Running for the plane</h1> 
+
+              <p class="description">L’Aéroport Nantes Atlantique a le plaisir de vous accueillir aux couleurs du Hellfest.
+
+                Une signalétique et un cheminement dédiés seront mis en place pour vous orienter vers les navettes ou taxis qui vous permettront de rejoindre le festival facilement.</p>
+          </div>
+      </div>
+  </div>
+  <div class="container" id="train">
+      <div class="flipper">
+          <div class="front">
+              <img class="card" src="images/train.jpg"
+                  alt="carte au trésor">
+              <p class="caption">Train</p>
+          </div>
+          <div class="back">
+              <h1>Ghost Train</h1>
+              <p class="description">Vous détenez un ticket d’entrée au festival et vous souhaitez venir en train : en partenariat avec la Région des Pays de la Loire et en collaboration avec la SNCF, une tarification préférentielle, le “Billet Live” a été mise en place pour assurer vos déplacements en train ou en autocar.
+
+                Trajet Aller OU Retour de n’importe quelle gare des Pays de la Loire à Clisson à 5€ (maximum) par personne et par trajet (offre valable pour l’aller à partir du jeudi 16 juin et valable pour le retour jusqu’au lundi 27 Juin)</p>
+          </div>
+      </div>
+  </div>
+  <div class="container" id="bus">
+      <div class="flipper">
+          <div class="front">
+              <img class="card" src="images/bus.jpg"
+                  alt="place du Hellfest">
+              <p class="caption">Bus</p>
+          </div>
+          <div class="back">
+              <h1>Wheels of fire</h1>
+              <p class="description">Les détenteurs de Pack BUS by Ontours doivent se présenter à la montée du bus avec leur carte d’identité et leur ticket Hellfest (imprimé ou sur smartphone) pour le scan de contrôle. Ce même ticket sera demandé à l’entrée du festival, conservez le précieusement jusqu’à votre retour complet à la maison. </p>
+          </div>
+      </div>
+  </div>
+  <div class="container" id="carpool">
+    <div class="flipper">
+        <div class="front">
+            <img class="card" src="images/carpool.jpg"
+                alt="place du Hellfest">
+            <p class="caption">Covoit</p>
+        </div>
+        <div class="back">
+            <h1>Highway to hell</h1>
+            <p class="description">Cette année avec la double édition, le Hellfest met en place un nouveau système de parking officiel gratuits afin de faciliter la circulation et d’empêcher le stationnement sauvage dans Clisson.</p>
+        </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- Navette -->
-
+<div class="headband-description">
+    
+  <div class="paper">
+      <div id="h1">Navettes </div>
+        <p>
+          <h2>Navette Train</h2>
+Si vous êtes un campeur, la navette est comprise dans votre billet Nuitée camping les jours de festival pour accéder au site du Hellfest. Les navettes sont également disponibles pour les arrivées et départ du site lorsque vous arrivez par train.
+        </p>
+     </div>
+  </div>
+</div>    
 
 <!-- embed google maps-->
 <section class="embedded">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.096378859901!2d-1.2733968496535368!3d47.09718123092097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48067505b2a48429%3A0x2dd650d3d2a5c90d!2sHellfest!5e0!3m2!1sen!2sfr!4v1647427412765!5m2!1sen!2sfr" width="90%" height="450" style="border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 <!-- footer -->
+<footer class = footer-class>
+        
+  <img src="https://cdn.discordapp.com/attachments/953659564887244870/953659851672780820/logo.png" 
+  alt="logo-footer" id="logo-footer">
+  <img src="images/social media.png"
+  alt="social media image" class="social-media">
+  <div class="footer">
+         
+      <ul class="footer-links">
+          <li class="item2"> <a class="link2" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+          <li class="item2"> <a class="link2" href="survie.html#survive">Kit de survie</a> </li>
+          <li class="item2"> <a class="link2" href="surplace.html#place">Sur place</a> </li>
+          <li class="item2"> <a class="link2" href="contact.html#contact">Contact</a> </li>
+          <li class="item2"> <a class="link2" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+        </ul>
+
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
