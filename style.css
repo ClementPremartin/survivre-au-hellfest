@@ -491,12 +491,6 @@ fieldset {
 	width: 100%;
 }
 
-button {
-  font-size: ;
-  font-family: ;
-  background-color: ;
-}
-
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width:100%;
 	border:1px solid #CCC;
@@ -704,8 +698,8 @@ h1 {
 .container-sur-place,
 .front-sur-place,
 .back-sur-place {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
 }
 
 
@@ -720,8 +714,6 @@ h1 {
 .back-sur-place {
   backface-visibility: hidden;
   position: fixed;
-  width: 250px;
-  height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
