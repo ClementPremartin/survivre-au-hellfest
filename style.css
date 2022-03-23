@@ -58,22 +58,6 @@ body, html {
 
 /*Aurore's Cards*/
 
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0;
-    font-family: "Metal Mania", sans-serif;
-    background-color: #D4CEBD;
-}
-
-
-a {
-    color: black;
-}
-
 .caption,
 h1 {
     text-align: center;
@@ -90,7 +74,7 @@ h1 {
 
 .description {
     font-size: 0.9em;
-    padding: 0 20px 20px 20px;
+    padding: 20px;
     text-align: left;
     color: var(--dark);
     font-family: var(--header-font);
@@ -98,12 +82,22 @@ h1 {
 
 .container {
     perspective: 1000px;
-    display: inline-block;
     margin: 3%;
 }
 
 .container:hover .flipper {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  height: fit-content;
+}
+.container:hover .back {
+  height: auto;
+  position: relative;
+}
+.container:hover .front {
+  height: 0;
+}
+.container:hover {
+  height: fit-content;
 }
 
 .container,
@@ -114,11 +108,11 @@ h1 {
 }
 
 
-
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
-    position: relative;
+    margin-top: 10%;
+    max-height: fit-content;
 
 }
 
@@ -126,7 +120,6 @@ h1 {
 .back {
     backface-visibility: hidden;
     position: absolute;
-    top: 0;
     left: 0;
     width: 250px;
     height: 250px;
@@ -154,7 +147,7 @@ h1 {
     border-top-left-radius: 25px 25px;
     border-top-right-radius: 25px 25px;
     min-width: 55%;
-    max-height: 55%;
+    height: 70%;
     width: 100%;
 }
  
@@ -360,13 +353,13 @@ text-decoration: none;
 /* CSS footer Clément End */
 /*Aurore's Headband descritpion*/
 
-.headband description {
-	background: linear-gradient(-0.25turn, #f4f4f4, #d6d6d6);
+.headband-description {
+	background: linear-gradient(-0.25turn, --light,--light-alternative);
 }
 
 .paper {
 	padding: 18px;
-	background-color: white;
+	background-color: var(--light-alternative);
 	border-radius: 3px;
 	box-shadow: 5px 15px 30.4px grey;
 }
@@ -455,7 +448,45 @@ a {
 
 
 /* direction Start Lionel */
+#orderby {
+  text-align: center;
 
+}
+.selectionContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: var(--header-font);
+}
+.selectionContainer label {
+  padding-right: 10px;
+}
+.selectionContainer select {
+  background-color: var(--light-alternative);
+  font-family: var(--header-font);
+}
+#content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#plane {
+  order: 1;
+}
+#train {
+  order: 2;
+}
+#carpool {
+  order: 3;
+}
+#bus {
+  order: 4;
+}
+
+#directionHeadband {
+  background-image: url(./images/directionbackground.avif);
+}
 /* direction End Lionel */
 
 
