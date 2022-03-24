@@ -47,7 +47,9 @@ body, html {
   background-repeat: no-repeat;
   background-color: var(--dark);
   height: clamp(300px, 5em, 500px);
-} 
+  box-shadow: 0px 0px 6px black;
+}
+
 
 /* Css header Clément End */
 
@@ -182,10 +184,10 @@ h1 {
   position: fixed;
   top: 1vh; 
   right: 5vw;
-  background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
+  background-image: linear-gradient(0.2turn, var(--secondary-color), var(--light-alternative), var(--primary-color));
   z-index: 1000;
   background-size: 45%;
-  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.86, 0.5, 0.2, 1);
   text-align: center;
   background-position: 100%;
 }
@@ -209,9 +211,9 @@ h1 {
   list-style: none;
   text-align: center;
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
   font-family: var(--title-font);
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
@@ -221,9 +223,8 @@ h1 {
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 6vw;
+  font-size: 7vw;
   font-weight: 300;
-  padding: 1rem 2rem;
   color: var(--dark);
   text-decoration: none;
   text-transform: uppercase;
@@ -339,7 +340,7 @@ text-decoration: none;
 #logo-footer{
   max-width: 8em;
   border-radius: 50%;
-  box-shadow: 1px 1px 20px black 
+  box-shadow: -2px 12px 15px black;
 }
 
 .social-media {
@@ -443,58 +444,49 @@ a {
 /* Aurore - contact */
 
 p{
-  font-family: 'Prompt', sans-serif;
+  font-family: var(--common-font);
 }
 
 .julien{
-  width: 20px;
-  height: 30px;
-}
+  border-radius: 100%;
+  width: 100px;
+  }
 
 .container-contact {
-  max-width: 900px;	
-  width:100%;
-	position:relative;
-  border-radius: 20px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-contact p {
+  margin-bottom: 15px;
+}
+
+.container-contact-infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
 	background:fade(#F9F9F9,85);
-	padding:25px;
-	margin:80px 0;
-  margin-top: 160px;
+  padding: 25px;
+  margin: 13px;
   border-radius: 15px;
-  border: 4mm ridge #171718;
+  border: 4mm ridge rgb(80, 80, 80);
 
-}
-
-
-#contact h3 {
-	color: #000;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
-
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
 }
 
 fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
+	width: 92%;
 	border:1px solid #CCC;
 	background:#FFF;
 	margin:0 0 5px;
@@ -518,8 +510,8 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#000;
-	color:#FFF;
+	background: var(--dark);
+	color: var(--light-alternative);
 	margin:0 0 5px;
 	padding:25px 10px;
 	font-size:15px;
@@ -527,9 +519,9 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
+	background: var(--secondary-color);
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
 
@@ -561,19 +553,18 @@ input.error{
 	border-color: darkred !important;
 }
 
-.newslatter{
+.newsletter{
   border-radius: 10px;
   display: flex;
   justify-content: center;
   margin: 20px;
-
 }
-
-button {
+.newsletter button {
   background-color: rgb(0 0 0 / 20%);
   border-radius: 5px;
+  font-family: var(--common-font);
+  padding: 5px 15px;
 }
-
 
 
 /* Aurore - contact-end */
@@ -735,8 +726,10 @@ input[type=submit]:active{
   }
   .altnav {
     position: fixed;
+    z-index: 10000;
     margin-top: -50px;
     width: 100%;
+    box-shadow: 0px 0px 6px black;
   }
   .altlist {
     list-style: none;
@@ -757,8 +750,36 @@ input[type=submit]:active{
   .altnav .altlogo {
     max-height: 40px;
   }
+  .img-magnifier-glass {
+    display: none;
+  }
+  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+    width: 95%;
+  }
 }
 
+.wrong-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.wrong-page h2 {
+  font-family: var(--header-font);
+  z-index: 1;
+  position: relative;
+}
+.wrong-page p {
+  font-family: var(--common-font);
+  z-index: 1;
+  position: relative;
+}
+.error404 {
+  position: relative;
+  width: 80%;
+  margin-top: -80px;
+  align-self: flex-end;
+}
 /* direction End Lionel */
 
 
@@ -824,8 +845,8 @@ h1 {
 .container-sur-place,
 .front-sur-place,
 .back-sur-place {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
 }
 
 
@@ -840,8 +861,6 @@ h1 {
 .back-sur-place {
   backface-visibility: hidden;
   position: fixed;
-  width: 250px;
-  height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
@@ -889,6 +908,25 @@ h1 {
 
 
 /* Contact Aurore Start */
-
+#contact-headband {
+  background-image: url(./images/contact-background.avif);
+}
 /* Contact Aurore End */
 
+/* Test Lionel Zoom map */
+.img-magnifier-container {
+  position:relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+/* Test Lionel Zoom map end */

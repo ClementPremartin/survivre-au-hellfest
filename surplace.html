@@ -76,7 +76,8 @@
 <!-- Sur place -->
 <!-- Sur place titre et map -->
 
-<div class = map-sur-place>
+<div class="img-magnifier-container">
+    <img id="myimage" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/13411741_10153556450452536_1705821655704452280_o.jpg?_nc_cat=109&ccb=1-5&_nc_sid=9267fe&_nc_ohc=mB0dKgrYMnkAX9Buk8C&_nc_ht=scontent-cdt1-1.xx&oh=00_AT_AN1J4m2sL0VDXzkbti8oR4Bo171vic5SO0yN7G2uSZg&oe=62607657" width="100%" height="auto">
 </div>
 
 <!-- Sur place titre et map end -->
@@ -91,9 +92,9 @@
           <div class="back-sur-place">
               <h1>Heavy Meal pour tous !</h1>
               <p class="description-sur-place">Que tu sois un éternel assoiffé dont le gosier n'a de cesse de se dessécher à vitesse d'un Hellfestien au galop ou encore un fin gourmet en recherche perpétuelle de l'orgasme culinaire, tu trouveras au Hellfest tout ce dont rêvait l'excessif Dionysos.<br><br>
-                Avec plus d’1,5 million de bières servies en 2019, les personnes en charge de cette difficile mission semblent avoir fait leurs preuves, et si jamais les files d'attente te semblent trop longues, pas d'inquiétudes ! Des “dessoiffeurs”, véritables commandos itinérants de la soif peuvent vous servir de la bière n’importe où dans l’enceinte du Hellfest grâce à leurs citernes embarquées.<br><br>
+                Avec plus d’1,5 million de bières servies en 2019, les personnes en charge de cette difficile mission semblent avoir fait leurs preuves, et si jamais les files d'attente te semblent trop longues, pas d'inquiétudes ! Des “dessoiffeurs”, véritables commandos itinérants de la soif peuvent vous servir de la bière n’importe où dans l’enceinte du Hellfest grâce à leurs citernes embarquées.
                 Pour les mateurs de vins rendez-vous devant la Warzone ou au Metal Corner, pour découvrir les bars à vins ! 
-                La crème de la crème des viticulteurs de Clisson sera là pour la dégustation de moult produits du terroir.<br><br>
+                La crème de la crème des viticulteurs de Clisson sera là pour la dégustation de moult produits du terroir.
                 Coté restauration, le Hellfest n'est pas en reste, tu trouveras de nombreux stands dans l’enceinte du festival et également au Metal Corner.
                 Sucré ou salé, de la simple barquette de frites jusqu’aux mets les plus exotiques en passant par les options végétariennes, tu ne risques pas de mourir de faim, la plus grande difficulté résidera dans ta capacité à conserver tous ces délicieux mets à l'intérieur de ton corps.</p>
           </div>
@@ -218,5 +219,11 @@
 
 
 <!-- Clément - Footer end -->
+<script src="script.js"></script>
+<script>
+    /* Initiate Magnify Function
+    with the id of the image, and the strength of the magnifier glass:*/
+    magnify("myimage", 3);
+    </script>
 </body>
 </html>

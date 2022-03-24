@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: white;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,42 +14,25 @@
     
     <title id="php_error">Le HellFest pour les devs PHP</title>
 </head>
-<body>
-<!-- Guillaume - Navbar-->
-<!-- hamburger -->
-<div class="jeanjeanladebrouille">
-  <input type="checkbox" id="navi-toggle" class="checkbox" />
-  <label for="navi-toggle" class="button">
-  <span class="icon">&nbsp;</span>
-      </label>
-<div class="background">&nbsp;</div>
+<body style="background-color: white;">
+  <div class="wrong-page">
+      <div class="wrong-page-text">
+          <h2 style="margin-top: 0;">Oups, vous avez atterri sur une mauvaise page!</h2>
+          <p>Vous allez être automatiquement redirigé vers la page principale dans <span id="countdowntimer">5 </span> secondes.</p>
+      </div>
+      <img class="error404" src="./images/Error404.png" alt="error 404">
+  </div>
 
-
-<!-- nav -->
-
-<a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
-<nav class="nav">
-  <ul class="list">
-    <li class="item"> <a class="link" href="index.html#home">Accueil</a> </li>
-    <li class="item"> <a class="link" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
-    <li class="item"> <a class="link" href="survie.html#survive">Kit de survie</a> </li>
-    <li class="item"> <a class="link" href="surplace.html#place">Sur place</a> </li>
-    <li class="item"> <a class="link" href="contact.html#contact">Contact</a> </li>
-    <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
-  </ul>
-</nav>
-</div>
-<nav class="altnav">
-  <ul class="altlist">
-      <img class="altlogo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="">
-    <li class="altitem"> <a class="altlink" href="index.html#home">Accueil</a> </li>
-    <li class="altitem"> <a class="altlink" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
-    <li class="altitem"> <a class="altlink" href="survie.html#survive">Kit de survie</a> </li>
-    <li class="altitem"> <a class="altlink" href="surplace.html#place">Sur place</a> </li>
-    <li class="altitem"> <a class="altlink" href="contact.html#contact">Contact</a> </li>
-    <li class="altitem"> <a class="altlink" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
-  </ul>
-</nav>
 <!-- Guillaume - Navbar end-->
+<script>
+    window.setTimeout(function(){ window.location = "./index.html"; },5000);
+    var timeleft = 5;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+ </script>
 </body>
 </html>
