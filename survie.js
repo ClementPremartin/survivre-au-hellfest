@@ -31,4 +31,6 @@ addSomething.onsubmit = function (event){
 
 /* Add element in checklist End*/
 
+
+
 /* Code js Clément */ 
