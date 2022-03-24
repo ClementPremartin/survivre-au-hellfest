@@ -17,34 +17,50 @@
 <body>
 <!-- Guillaume - Navbar-->
 <!-- hamburger -->
-<input type="checkbox" id="navi-toggle" class="checkbox" />
-<label for="navi-toggle" class="button">
+<div class="jeanjeanladebrouille">
+  <input type="checkbox" id="navi-toggle" class="checkbox" />
+  <label for="navi-toggle" class="button">
   <span class="icon">&nbsp;</span>
-</label>
+      </label>
 <div class="background">&nbsp;</div>
 
-  <!-- nav -->
-  <a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
-  <nav class="nav">
-    <ul class="list">
-      <li class="item"> <a class="link" href="index.html#home">Accueil</a> </li>
-      <li class="item"> <a class="link" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
-      <li class="item"> <a class="link" href="survie.html#survive">Kit de survie</a> </li>
-      <li class="item"> <a class="link" href="surplace.html#place">Sur place</a> </li>
-      <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
-    </ul>
+
+<!-- nav -->
+
+<a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
+<nav class="nav">
+  <ul class="list">
+    <li class="item"> <a class="link" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+    <li class="item"> <a class="link" href="survie.html#survive">Kit de survie</a> </li>
+    <li class="item"> <a class="link" href="surplace.html#place">Sur place</a> </li>
+    <li class="item"> <a class="link" href="contact.html#contact">Contact</a> </li>
+    <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+  </ul>
+</nav>
+</div>
+<nav class="altnav">
+  <ul class="altlist">
+      <img class="altlogo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="">
+    <li class="altitem"> <a class="altlink" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+    <li class="altitem"> <a class="altlink" href="survie.html#survive">Kit de survie</a> </li>
+    <li class="altitem"> <a class="altlink" href="surplace.html#place">Sur place</a> </li>
+    <li class="altitem"> <a class="altlink" href="contact.html#contact">Contact</a> </li>
+    <li class="altitem"> <a class="altlink" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+  </ul>
 </nav>
 <!-- Guillaume - Navbar end-->
-
+<div class = headband id="contact-headband">
+  <h1>Nous contacter</h1>
+</div>
 <!--Aurore - contact-->
 
 <div class="container-contact">  
-  <form id="contact" method="post">
-    <div>
-    <h1>Notre référant local </h1>
-    <img class="julien" src="assets/img-julien.jpg" alt="formateur"/>
-    <p>Notre référant Métal sur place répondra à toutes vos questions</p>
-  </div>
+  <form id="contact" action="" method="post">
+    <div class="container-contact-infos">
+      <img class="julien" src="./images/profile-julien.png" alt="formateur"/> 
+      <h1>Notre référant local </h1>
+    </div>
+  <p>Notre référant Métal sur place répondra à toutes vos questions</p>
     <fieldset>
       <input placeholder="Metal Name" type="text" tabindex="1" required autofocus>
   
@@ -58,14 +74,30 @@
     </fieldset>
   </form>
 
-  <div class="newslatter">
-
-    <button>NEWSLATTER</button>
+  <div class="newsletter">
+    <button>NEWSLETTER</button>
   </div>
 
 </div>
 
 <!--Aurore - contact - end-->
+<footer class = footer-class>
+        
+  <img src="https://cdn.discordapp.com/attachments/953659564887244870/953659851672780820/logo.png" 
+  alt="logo-footer" id="logo-footer">
+  <img src="images/social media.png"
+  alt="social media image" class="social-media">
+  <div class="footer">
+         
+      <ul class="footer-links">
+          <li class="item2"> <a class="link2" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+          <li class="item2"> <a class="link2" href="survie.html#survive">Kit de survie</a> </li>
+          <li class="item2"> <a class="link2" href="surplace.html#place">Sur place</a> </li>
+          <li class="item2"> <a class="link2" href="contact.html#contact">Contact</a> </li>
+          <li class="item2"> <a class="link2" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+        </ul>
 
+  </div>
+</footer>
 </body>
 </html>

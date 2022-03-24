@@ -22,49 +22,44 @@
     --light-alternative: #B2F7EF;
   }
 
-body {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    background-color: var(--light);
+* {margin: 0;
+  padding: 0;
 }
 
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: var(--light);
+  position: relative;
+}
+
+/* Css header Clément start */
 .headband {
   display:flex;
   justify-content: center;
+  align-items: center;
   font-family: var(--title-font);
   color: var(--light-alternative);
   font-size: 5vw;
   background-image: url(images/background-image-dégradé.jpg.png);
   background-position: center;
-  padding: 15vw 0vw 15vw 0vw;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100vw; 
   background-color: var(--dark);
+  height: clamp(300px, 5em, 500px);
+  box-shadow: 0px 0px 6px black;
 }
+
+
+/* Css header Clément End */
+
 .embedded {
     display: flex;
     justify-content: center;
     margin: 1rem 0px;
-}
+  }
 
 /*Aurore's Cards*/
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0;
-    font-family: "Metal Mania", sans-serif;
-    background-color: #D4CEBD;
-}
-
-
-a {
-    color: black;
-}
 
 .caption,
 h1 {
@@ -82,7 +77,7 @@ h1 {
 
 .description {
     font-size: 0.9em;
-    padding: 0 20px 20px 20px;
+    padding: 20px;
     text-align: left;
     color: var(--dark);
     font-family: var(--header-font);
@@ -90,27 +85,37 @@ h1 {
 
 .container {
     perspective: 1000px;
-    display: inline-block;
     margin: 3%;
 }
 
 .container:hover .flipper {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  height: fit-content;
+}
+.container:hover .back {
+  height: auto;
+  position: relative;
+}
+.container:hover .front {
+  height: 0;
+}
+.container:hover {
+  height: fit-content;
 }
 
 .container,
 .front,
 .back {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
 }
-
 
 
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
-    position: relative;
+    margin-top: 10%;
+    max-height: fit-content;
 
 }
 
@@ -118,10 +123,7 @@ h1 {
 .back {
     backface-visibility: hidden;
     position: absolute;
-    top: 0;
     left: 0;
-    width: 250px;
-    height: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
@@ -146,7 +148,7 @@ h1 {
     border-top-left-radius: 25px 25px;
     border-top-right-radius: 25px 25px;
     min-width: 55%;
-    max-height: 55%;
+    height: 70%;
     width: 100%;
 }
  
@@ -163,11 +165,11 @@ h1 {
 .button {
   position: relative;
   background-color: var(--light-alternative);
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 5vh; 
+  top: 1vh; 
   right: 5vw; 
   z-index: 2000;
   box-shadow: 0 3px 8px black;;
@@ -176,16 +178,16 @@ h1 {
 }
 
 .background {
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 5vh; 
+  top: 1vh; 
   right: 5vw;
-  background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
+  background-image: linear-gradient(0.2turn, var(--secondary-color), var(--light-alternative), var(--primary-color));
   z-index: 1000;
   background-size: 45%;
-  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.86, 0.5, 0.2, 1);
   text-align: center;
   background-position: 100%;
 }
@@ -209,22 +211,20 @@ h1 {
   list-style: none;
   text-align: center;
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
   font-family: var(--title-font);
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
-  margin: 1rem;
-  font-size: 2rem;
+  margin: 5vh;
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 4vw;
+  font-size: 7vw;
   font-weight: 300;
-  padding: 1rem 2rem;
   color: var(--dark);
   text-decoration: none;
   text-transform: uppercase;
@@ -240,7 +240,7 @@ h1 {
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform:scale(80);
+  transform:scale(90);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
@@ -304,22 +304,69 @@ h1 {
 
 /* Guillaume's Navbar end */
 
+/* CSS footer Clément Start */
+
+.footer-class {
+  
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(images/smoke.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+ 
+
+}
+
+.link2 {
+color: var(--light-alternative);
+text-decoration: none;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--header-font);
+  font-size: 7px;
+  padding-right: 20px;
+}
+
+#logo-footer{
+  max-width: 8em;
+  border-radius: 50%;
+  box-shadow: -2px 12px 15px black;
+}
+
+.social-media {
+  box-shadow: none;
+  width: 40vw;
+  max-width: 16em;
+  display: inline-block;
+}
+
+/* CSS footer Clément End */
 /*Aurore's Headband descritpion*/
 
-.headband description {
-	background: linear-gradient(-0.25turn, #f4f4f4, #d6d6d6);
+.headband-description {
+	background: linear-gradient(-0.25turn, --light,--light-alternative);
 }
 
 .paper {
 	padding: 18px;
-	background-color: white;
+	background-color: var(--light-alternative);
 	border-radius: 3px;
 	box-shadow: 5px 15px 30.4px grey;
 }
 
 #h1 {
 	font-weight: 800;
-	font-size: 54px;
+	font-size: 30px;
 	letter-spacing: 2.11px;
 	font-family: 'Metal Mania', cursive;
 }
@@ -338,16 +385,19 @@ a {
     color: #6495ED;
 }
 
+
+
+
 /*Aurore's Headband descritpion end*/
 
 /* Logo */
 
 .logo {
   border-radius: 50%;
-  width: 6rem;
+  width: 4rem;
   position: fixed;
   z-index: 2100;
-  top: 5vh;
+  top: 1vh;
   left: 5vw;
   margin: 0;
   box-shadow: 0 3px 8px black;
@@ -390,67 +440,53 @@ a {
 
 /* Logo end */
 
+
 /* Aurore - contact */
 
 p{
-  font-family: 'Prompt', sans-serif;
+  font-family: var(--common-font);
 }
 
 .julien{
-  width: 20px;
-  height: 30px;
-}
+  border-radius: 100%;
+  width: 100px;
+  }
 
 .container-contact {
-  max-width: 900px;	
-  width:100%;
-	position:relative;
-  border-radius: 20px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-contact p {
+  margin-bottom: 15px;
+}
+
+.container-contact-infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
 	background:fade(#F9F9F9,85);
-	padding:25px;
-	margin:80px 0;
-  margin-top: 160px;
+  padding: 25px;
+  margin: 13px;
   border-radius: 15px;
-  border: 4mm ridge #171718;
+  border: 4mm ridge rgb(80, 80, 80);
 
-}
-
-
-#contact h3 {
-	color: #000;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
-
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
 }
 
 fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
-}
-
-button {
-  font-size: ;
-  font-family: ;
-  background-color: ;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
+	width: 92%;
 	border:1px solid #CCC;
 	background:#FFF;
 	margin:0 0 5px;
@@ -474,8 +510,8 @@ button {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#000;
-	color:#FFF;
+	background: var(--dark);
+	color: var(--light-alternative);
 	margin:0 0 5px;
 	padding:25px 10px;
 	font-size:15px;
@@ -483,9 +519,9 @@ button {
 }
 
 #contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
+	background: var(--secondary-color);
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
 
@@ -517,19 +553,372 @@ input.error{
 	border-color: darkred !important;
 }
 
-.newslatter{
+.newsletter{
   border-radius: 10px;
   display: flex;
   justify-content: center;
   margin: 20px;
-
 }
-
-button {
+.newsletter button {
   background-color: rgb(0 0 0 / 20%);
   border-radius: 5px;
+  font-family: var(--common-font);
+  padding: 5px 15px;
 }
-
 
 
 /* Aurore - contact-end */
+
+
+/* survivre au hellFest Start Clément */
+#bandeau-survie {
+  background-image: url("./images/backgrndSurviedégradé.png");
+
+}
+
+p {
+  font-family: var(--common-font);
+}
+
+.video-reference-survie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.stuff-survie {
+  padding-left: 18px;
+  list-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: var(--common-font);
+  font-size: 1.2em;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+  color: var(--dark);
+  position: relative;
+  background: linear-gradient(rgba(250, 250, 250, 0.5), rgba(255,255,255,.5)), url("./images/Backgroundpaper.jpg")
+}
+
+.stuff {
+  padding:1.5%;
+  font-size: 1.5rem;
+}
+
+h2, .trousse-de-secours {
+  padding-bottom: 30px;
+  font-family: var(--title-font);
+  font-size: 7vw;
+  padding-left: 16px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.interaction {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+#add-element, #submit {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+#add-element {
+  height: 50px;
+  
+}
+
+input[type=submit] {
+  height: 90px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  font: var(--common-font);
+  color: var(--light-alternative);
+  background:var(--dark)
+   
+}
+
+input[type=submit]:hover{
+  background: var(--primary-color);
+  color: var(--dark);
+}
+
+.youtube-link-survie {
+ display: flex;
+ justify-content: center;
+ height: 50vw;
+ max-height: 500px;
+ max-width:1000px ;
+}
+ 
+
+/* survivre au hellFest End Clément */
+
+
+
+/* direction Start Lionel */
+#orderby {
+  text-align: center;
+
+}
+.selectionContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: var(--header-font);
+}
+.selectionContainer label {
+  padding-right: 10px;
+}
+.selectionContainer select {
+  background-color: var(--light-alternative);
+  font-family: var(--header-font);
+}
+#content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#plane {
+  order: 1;
+}
+#train {
+  order: 2;
+}
+#carpool {
+  order: 3;
+}
+#bus {
+  order: 4;
+}
+
+#directionHeadband {
+  background-image: url(./images/directionbackground.avif);
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 720px) {
+  .altnav{
+    display: none;
+  }
+}
+@media screen and (min-width: 720px) {
+  .jeanjeanladebrouille{
+    display: none;
+  }
+  .headband {
+    margin-top: 50px;
+  }
+  .altnav {
+    position: fixed;
+    z-index: 10000;
+    margin-top: -50px;
+    width: 100%;
+    box-shadow: 0px 0px 6px black;
+  }
+  .altlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: var(--dark);
+    font-family: var(--header-font);
+  }
+  .altlink {
+    text-decoration: none;
+    color: var(--light);
+  }
+  .altlink:hover {
+    color: var(--primary-color);
+  }
+  .altnav .altlogo {
+    max-height: 40px;
+  }
+  .img-magnifier-glass {
+    display: none;
+  }
+  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+    width: 95%;
+  }
+}
+
+.wrong-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.wrong-page h2 {
+  font-family: var(--header-font);
+  z-index: 1;
+  position: relative;
+}
+.wrong-page p {
+  font-family: var(--common-font);
+  z-index: 1;
+  position: relative;
+}
+.error404 {
+  position: relative;
+  width: 80%;
+  margin-top: -80px;
+  align-self: flex-end;
+}
+/* direction End Lionel */
+
+
+
+/* Sur place Start Guillaume */
+
+#surplace-headband {
+  background-image: url("https://www.hellfest.fr/_nuxt/image/58a6fc.webp");
+}
+
+.h2-sur-place, 
+h2 {
+  font-size: 7vw;
+  margin-top: 2vw;
+  text-align: center;
+  font-family: var(--title-font);
+  color: var(--dark);
+}
+
+.map-sur-place {
+  display:flex;
+  justify-content: center;
+  background-image: url(https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/13411741_10153556450452536_1705821655704452280_o.jpg?_nc_cat=109&ccb=1-5&_nc_sid=9267fe&_nc_ohc=mB0dKgrYMnkAX9Buk8C&_nc_ht=scontent-cdt1-1.xx&oh=00_AT_AN1J4m2sL0VDXzkbti8oR4Bo171vic5SO0yN7G2uSZg&oe=62607657);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 35%;
+} 
+
+.caption-sur-place,
+h1 {
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 2em;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 1rem;
+}
+
+
+
+.description-sur-place {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  color: var(--dark);
+  font-family: var(--header-font);
+}
+
+.container-sur-place {
+  perspective: 100%;
+  display:inline-block;
+  margin: 3%;
+}
+
+.container-sur-place:hover .flipper-sur-place {
+  transform: rotateY(180deg);
+}
+
+.container-sur-place:hover .back-sur-place {
+  height: auto;
+  position: relative;
+}
+
+.container-sur-place,
+.front-sur-place,
+.back-sur-place {
+  width: 350px;
+  height: 350px;
+}
+
+
+
+.flipper-sur-place {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  margin-top: 10%;
+}
+
+.front-sur-place,
+.back-sur-place {
+  backface-visibility: hidden;
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.front-sur-place {
+  z-index: 2;
+  border-radius: 25px;
+}
+
+.back-sur-place {
+  transform: rotateY(180deg);
+  border-radius: 25px;
+}
+
+#content-sur-place {
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 10%;
+}
+
+.card-sur-place {
+  border-top-left-radius: 25px 25px;
+  border-top-right-radius: 25px 25px;
+  min-width: 55%;
+  max-height: 55%;
+  width: 100%;
+}
+
+
+
+.Video-video[data-lazyload=loaded][data-v-13c7e8f7] {
+  opacity: 1;
+}
+
+.Video-video[data-v-13c7e8f7] {
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(.25,.46,.45,.94);
+}
+
+/* Sur place Start Guillaume */
+
+
+
+/* Contact Aurore Start */
+#contact-headband {
+  background-image: url(./images/contact-background.avif);
+}
+/* Contact Aurore End */
+
+/* Test Lionel Zoom map */
+.img-magnifier-container {
+  position:relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+/* Test Lionel Zoom map end */
