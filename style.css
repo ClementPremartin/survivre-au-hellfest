@@ -459,7 +459,7 @@ p{
   align-items: center;
 }
 .container-contact p {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .container-contact-infos {
@@ -565,6 +565,13 @@ input.error{
   font-family: var(--common-font);
   padding: 5px 15px;
 }
+
+.newsletter button:hover {
+
+  color: var(--dark);
+  border: var(--dark) solid 1px;
+  background: var(--secondary-color);
+  }
 
 
 /* Aurore - contact-end */
