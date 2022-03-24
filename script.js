@@ -103,15 +103,15 @@ addSomething.onsubmit = function (event){
   
   const newToDo = document.createElement("li");
   
-  const newCheckbox = document.createElement('input');
-  newCheckbox.setAttribute("type", "checkbox");
   
   newToDo.innerHTML = toDoInput.value;
   newToDo.classList.add("stuff");
+  
+  const newCheckbox = document.createElement('input');
+  newCheckbox.setAttribute("type", "checkbox");
+  newToDo.appendChild(newCheckbox);
 
   toDoList.appendChild(newToDo);
-
- 
 
   toDoInput.value = "";
 
