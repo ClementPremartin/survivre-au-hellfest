@@ -47,7 +47,9 @@ body, html {
   background-repeat: no-repeat;
   background-color: var(--dark);
   height: clamp(300px, 5em, 500px);
-} 
+  box-shadow: 0px 0px 6px black;
+}
+
 
 /* Css header Clément End */
 
@@ -338,7 +340,7 @@ text-decoration: none;
 #logo-footer{
   max-width: 8em;
   border-radius: 50%;
-  box-shadow: 1px 1px 20px black 
+  box-shadow: -2px 12px 15px black;
 }
 
 .social-media {
@@ -442,58 +444,49 @@ a {
 /* Aurore - contact */
 
 p{
-  font-family: 'Prompt', sans-serif;
+  font-family: var(--common-font);
 }
 
 .julien{
-  width: 20px;
-  height: 30px;
-}
+  border-radius: 100%;
+  width: 100px;
+  }
 
 .container-contact {
-  max-width: 900px;	
-  width:100%;
-	position:relative;
-  border-radius: 20px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-contact p {
+  margin-bottom: 15px;
+}
+
+.container-contact-infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
 	background:fade(#F9F9F9,85);
-	padding:25px;
-	margin:80px 0;
-  margin-top: 160px;
+  padding: 25px;
+  margin: 13px;
   border-radius: 15px;
-  border: 4mm ridge #171718;
+  border: 4mm ridge rgb(80, 80, 80);
 
-}
-
-
-#contact h3 {
-	color: #000;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
-
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
 }
 
 fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
+	width: 92%;
 	border:1px solid #CCC;
 	background:#FFF;
 	margin:0 0 5px;
@@ -517,8 +510,8 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#000;
-	color:#FFF;
+	background: var(--dark);
+	color: var(--light-alternative);
 	margin:0 0 5px;
 	padding:25px 10px;
 	font-size:15px;
@@ -526,7 +519,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#09C;
+	background: var(--secondary-color);
 	-webkit-transition: 0.3s ease-in-out;
 	-moz-transition: 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
@@ -560,19 +553,18 @@ input.error{
 	border-color: darkred !important;
 }
 
-.newslatter{
+.newsletter{
   border-radius: 10px;
   display: flex;
   justify-content: center;
   margin: 20px;
-
 }
-
-button {
+.newsletter button {
   background-color: rgb(0 0 0 / 20%);
   border-radius: 5px;
+  font-family: var(--common-font);
+  padding: 5px 15px;
 }
-
 
 
 /* Aurore - contact-end */
@@ -726,8 +718,10 @@ input[type=submit]:hover{
   }
   .altnav {
     position: fixed;
+    z-index: 10000;
     margin-top: -50px;
     width: 100%;
+    box-shadow: 0px 0px 6px black;
   }
   .altlist {
     list-style: none;
@@ -750,6 +744,9 @@ input[type=submit]:hover{
   }
   .img-magnifier-glass {
     display: none;
+  }
+  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+    width: 95%;
   }
 }
 
@@ -903,7 +900,9 @@ h1 {
 
 
 /* Contact Aurore Start */
-
+#contact-headband {
+  background-image: url(./images/contact-background.avif);
+}
 /* Contact Aurore End */
 
 /* Test Lionel Zoom map */
