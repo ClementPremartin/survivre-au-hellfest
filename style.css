@@ -662,6 +662,12 @@ input[type=submit]:active{
   color: var(--dark);
 }
 
+.videoyoutube {
+  display: flex;
+  justify-content: center;
+
+}
+
 .youtube-link-survie {
  display: flex;
  justify-content: center;
