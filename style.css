@@ -182,10 +182,10 @@ h1 {
   position: fixed;
   top: 1vh; 
   right: 5vw;
-  background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
+  background-image: linear-gradient(0.2turn, var(--secondary-color), var(--light-alternative), var(--primary-color));
   z-index: 1000;
   background-size: 45%;
-  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.86, 0.5, 0.2, 1);
   text-align: center;
   background-position: 100%;
 }
@@ -209,9 +209,9 @@ h1 {
   list-style: none;
   text-align: center;
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
   font-family: var(--title-font);
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
@@ -221,9 +221,8 @@ h1 {
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 6vw;
+  font-size: 7vw;
   font-weight: 300;
-  padding: 1rem 2rem;
   color: var(--dark);
   text-decoration: none;
   text-transform: uppercase;
@@ -528,8 +527,8 @@ fieldset {
 
 #contact button[type="submit"]:hover {
 	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
 
@@ -841,8 +840,8 @@ h1 {
 .container-sur-place,
 .front-sur-place,
 .back-sur-place {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
 }
 
 
@@ -857,8 +856,6 @@ h1 {
 .back-sur-place {
   backface-visibility: hidden;
   position: fixed;
-  width: 250px;
-  height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
