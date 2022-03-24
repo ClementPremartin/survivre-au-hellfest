@@ -209,9 +209,9 @@ h1 {
   list-style: none;
   text-align: center;
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
   font-family: var(--title-font);
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
@@ -221,9 +221,8 @@ h1 {
 .link:link,
 .link:visited {
   display: inline-block;
-  font-size: 6vw;
+  font-size: 7vw;
   font-weight: 300;
-  padding: 1rem 2rem;
   color: var(--dark);
   text-decoration: none;
   text-transform: uppercase;
