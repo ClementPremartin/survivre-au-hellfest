@@ -182,10 +182,10 @@ h1 {
   position: fixed;
   top: 1vh; 
   right: 5vw;
-  background-image: url("https://api-cdn.arte.tv/api/mami/v1/program/en/RC-014483/1920x1080?ts=1624435186");
+  background-image: linear-gradient(0.2turn, var(--secondary-color), var(--light-alternative), var(--primary-color));
   z-index: 1000;
   background-size: 45%;
-  transition: transform 0.8s cubic-bezier(0.86, 0.5, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.86, 0.5, 0.2, 1);
   text-align: center;
   background-position: 100%;
 }
