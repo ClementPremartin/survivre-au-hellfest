@@ -100,17 +100,14 @@ const labelId = document.getElementById("labelId")
 addSomething.onsubmit = function (event){
   event.preventDefault();
 
+  
   const newToDo = document.createElement("li");
   
- 
-
-  newToDo.innerHTML = toDoInput.value;
-  newToDo.classList.add("stuff");
-
   const newCheckbox = document.createElement('input');
   newCheckbox.setAttribute("type", "checkbox");
-
-  newToDo.appendChild(newCheckbox);
+  
+  newToDo.innerHTML = toDoInput.value;
+  newToDo.classList.add("stuff");
 
   toDoList.appendChild(newToDo);
 
