@@ -1,5 +1,6 @@
 
 /* Code js Clément */
+/* Add element in checklist Start*/
 
 const addSomething = document.getElementById("form-survie");
 const toDoInput = document.getElementById("inputId");
@@ -28,6 +29,6 @@ addSomething.onsubmit = function (event){
 
 };
 
-
+/* Add element in checklist End*/
 
 /* Code js Clément */ 

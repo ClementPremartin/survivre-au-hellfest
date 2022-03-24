@@ -627,6 +627,24 @@ h2, .trousse-de-secours {
   margin-bottom: 25px;
 }
 
+.print-button {
+  height: 70px;
+  width: 100px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  align-self: center;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  font: var(--common-font);
+  color: var(--light-alternative);
+  background:var(--dark)
+}
+
+.print-button:active{
+  background: var(--primary-color);
+  color: var(--dark);
+}
+
 #inputId {
   margin-bottom:3% ;
   padding-left: 25px;
