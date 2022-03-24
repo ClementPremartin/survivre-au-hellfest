@@ -608,6 +608,7 @@ p {
   color: var(--dark);
   position: relative;
   background: linear-gradient(rgba(250, 250, 250, 0.5), rgba(255,255,255,.5)), url("./images/Backgroundpaper.jpg")
+  
 }
 
 .stuff {
@@ -623,7 +624,6 @@ h2, .trousse-de-secours {
   padding-top: 25px;
   display: flex;
   justify-content: flex-start;
-
 }
 
 .interaction {
@@ -640,20 +640,24 @@ h2, .trousse-de-secours {
 
 #add-element {
   height: 50px;
-  
+
 }
 
+
 input[type=submit] {
-  height: 90px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 70px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  display: inline-block;
   border-radius: 10px;
   font: var(--common-font);
   color: var(--light-alternative);
   background:var(--dark)
+  
    
 }
 
-input[type=submit]:hover{
+input[type=submit]:active{
   background: var(--primary-color);
   color: var(--dark);
 }
@@ -664,6 +668,7 @@ input[type=submit]:hover{
  height: 50vw;
  max-height: 500px;
  max-width:1000px ;
+ background-color: var(--dark);
 }
  
 
