@@ -619,17 +619,17 @@ h2, .trousse-de-secours {
 
 .interaction {
   display: flex;
-  flex-direction: column;
+  
   padding: 2%;
 }
 
-#add-element, #submit {
+#form-survie, #submit {
   display: flex;
-  justify-content: center;
-  padding: 1%;
+  
+  padding: 10%;
 }
 
-#add-element {
+#form-survie {
   height: 50px;
 
 }
