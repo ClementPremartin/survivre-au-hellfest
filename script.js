@@ -26,6 +26,8 @@ select.addEventListener('change', (event) => {
 });
 
 
+/* Code js Clément */
+
 const addSomething = document.querySelector("#add-element");
 const toDoInput = document.querySelector("#element");
 const toDoList = document.querySelector("#submit");
@@ -38,4 +40,4 @@ toDoList.appendChild("newToDo");
 toDoInput.value = "";
 };
 
-
+/* Code js Clément */ 
