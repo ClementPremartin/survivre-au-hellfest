@@ -445,12 +445,14 @@ a {
 
 p{
   font-family: var(--common-font);
+
 }
 
 .julien{
   border-radius: 100%;
   width: 100px;
   }
+
 
 .container-contact {
   display: flex;
@@ -460,6 +462,7 @@ p{
 }
 .container-contact p {
   margin-bottom: 25px;
+  text-shadow: 2px 2px 7px var(--dark);
 }
 
 .container-contact-infos {
@@ -573,6 +576,31 @@ input.error{
   background: var(--secondary-color);
   }
 
+
+ /*test bulle photo julien start*/
+ .tooltip_div {
+  position: relative;
+  display: inline-block;
+  }
+
+ .tooltip {
+  visibility: hidden;
+  width: 170px;
+  background-color:var(--secondary-color);
+  color: var(--light-alternative);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Positioning the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -32px;
+  left: -25%;
+  }
+  .tooltip_div:hover .tooltip {
+  visibility: visible;
+  }
+ /*test bulle photo julien end*/
 
 /* Aurore - contact-end */
 
