@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="survie.css">
     
     <!-- Pour l'icone d'onglet dans le navigateur-->
 
@@ -18,22 +17,38 @@
 <body>
 <!-- Guillaume - Navbar-->
 <!-- hamburger -->
-<input type="checkbox" id="navi-toggle" class="checkbox" />
-<label for="navi-toggle" class="button">
+<div class="jeanjeanladebrouille">
+  <input type="checkbox" id="navi-toggle" class="checkbox" />
+  <label for="navi-toggle" class="button">
   <span class="icon">&nbsp;</span>
-</label>
+      </label>
 <div class="background">&nbsp;</div>
 
-  <!-- nav -->
-  <a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
-  <nav class="nav">
-    <ul class="list">
-      <li class="item"> <a class="link" href="index.html#home">Accueil</a> </li>
-      <li class="item"> <a class="link" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
-      <li class="item"> <a class="link" href="surplace.html#place">Sur place</a> </li>
-      <li class="item"> <a class="link" href="contact.html#contact">Contact</a> </li>
-      <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
-    </ul>
+
+<!-- nav -->
+
+<a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
+<nav class="nav">
+  <ul class="list">
+    <li class="item"> <a class="link" href="index.html#home">Accueil</a> </li>
+    <li class="item"> <a class="link" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+    <li class="item"> <a class="link" href="survie.html#survive">Kit de survie</a> </li>
+    <li class="item"> <a class="link" href="surplace.html#place">Sur place</a> </li>
+    <li class="item"> <a class="link" href="contact.html#contact">Contact</a> </li>
+    <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+  </ul>
+</nav>
+</div>
+<nav class="altnav">
+  <ul class="altlist">
+      <img class="altlogo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="">
+    <li class="altitem"> <a class="altlink" href="index.html#home">Accueil</a> </li>
+    <li class="altitem"> <a class="altlink" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+    <li class="altitem"> <a class="altlink" href="survie.html#survive">Kit de survie</a> </li>
+    <li class="altitem"> <a class="altlink" href="surplace.html#place">Sur place</a> </li>
+    <li class="altitem"> <a class="altlink" href="contact.html#contact">Contact</a> </li>
+    <li class="altitem"> <a class="altlink" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+  </ul>
 </nav>
 <!-- Guillaume - Navbar end-->
 <!-- Clément - contenu -->
@@ -59,41 +74,56 @@
 <div class="liste-survie" id="liste-survie-id">
   <h2>Checklist</h2>
   <ul class="stuff-survie">
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="toile-de-tente" name="toile-de-tente">
       <label for="toile-de-tente">Toile de Tente</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="sac-de-couchage" name="sac-de-couchage">
       <label for="sac-de-couchage">Sac de couchage</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="chaussures" name="chaussures">
       <label for="chaussures">Chaussures</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="lunettes-de-soleil" name="lunette-de-soleil">
       <label for="lunette-de-soleil">Lunette de Soleil</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="bouteille" name="bouteille">
       <label for="bouteille">Bouteille</label>
-    </div>
+    </li>
     
-    <div>
+    <li class="stuff">
       <input type="checkbox" id="trousse-de-secours" name="trousse-de-secours">
       <label for="trousse-de-secours">Trousse de secours</label>
-    </div>
+    </li>
 </div>
+
+
+<div class="interaction">
+ 
+  <div id="add-element">
+    <label for="element"></label>
+    <input type="text" name="element" id="element" placeholder="Prendre des carottes">
+  </div>
+  
+  <div id="submit">
+    <input type="submit" value="Ajoute un truc!">
+  </div>
+
+</div>  
+
 
 <div class="video-reference-survie">
   
-  <h3>Trousse de Secours</h3>
-  
+  <div class ="trousse-de-secours"> Trousse de Secours</div>
+
   <div class="youtube-link-survie">
     <iframe width="90%" height="100%"  src="https://www.youtube.com/embed/bHusmzKSzsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
@@ -121,6 +151,8 @@
   </div>
 </footer>
 <!-- Clément - Footer end -->
+
+<script src="script.js"></script>
 
 </body>
 </html>

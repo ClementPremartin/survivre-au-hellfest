@@ -37,15 +37,16 @@ body, html {
 .headband {
   display:flex;
   justify-content: center;
+  align-items: center;
   font-family: var(--title-font);
   color: var(--light-alternative);
   font-size: 5vw;
   background-image: url(images/background-image-dégradé.jpg.png);
   background-position: center;
-  padding: 15vw 0vw 15vw 0vw;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100vw; 
   background-color: var(--dark);
+  height: clamp(300px, 5em, 500px);
 } 
 
 /* Css header Clément End */
@@ -103,8 +104,8 @@ h1 {
 .container,
 .front,
 .back {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
 }
 
 
@@ -121,8 +122,6 @@ h1 {
     backface-visibility: hidden;
     position: absolute;
     left: 0;
-    width: 250px;
-    height: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
@@ -385,6 +384,9 @@ a {
     color: #6495ED;
 }
 
+
+
+
 /*Aurore's Headband descritpion end*/
 
 /* Logo */
@@ -596,23 +598,66 @@ p {
 
 .stuff-survie {
   padding-left: 18px;
+  list-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: var(--common-font);
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-left: 5%;
   margin-right: 5%;
   border-radius: 10px;
   color: var(--dark);
   position: relative;
-  background: linear-gradient(rgba(250, 250, 250, 0.5), rgba(255,255,255,.5)), url("./images/pexels-pixabay-235985.jpg")
+  background: linear-gradient(rgba(250, 250, 250, 0.5), rgba(255,255,255,.5)), url("./images/Backgroundpaper.jpg")
 }
 
+.stuff {
+  padding:1.5%;
+  font-size: 1.5rem;
+}
 
-h2, h3 {
+h2, .trousse-de-secours {
   padding-bottom: 30px;
-  font-size: 2em;
+  font-family: var(--title-font);
+  font-size: 7vw;
   padding-left: 16px;
   padding-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+
 }
+
+.interaction {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+#add-element, #submit {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+#add-element {
+  height: 50px;
+  
+}
+
+input[type=submit] {
+  height: 90px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  font: var(--common-font);
+  color: var(--light-alternative);
+  background:var(--dark)
+   
+}
+
+input[type=submit]:hover{
+  background: var(--primary-color);
+  color: var(--dark);
+}
+
 .youtube-link-survie {
  display: flex;
  justify-content: center;
@@ -666,24 +711,79 @@ h2, h3 {
 #directionHeadband {
   background-image: url(./images/directionbackground.avif);
 }
+
+/* Responsive navbar */
+@media screen and (max-width: 720px) {
+  .altnav{
+    display: none;
+  }
+}
+@media screen and (min-width: 720px) {
+  .jeanjeanladebrouille{
+    display: none;
+  }
+  .headband {
+    margin-top: 50px;
+  }
+  .altnav {
+    position: fixed;
+    margin-top: -50px;
+    width: 100%;
+  }
+  .altlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: var(--dark);
+    font-family: var(--header-font);
+  }
+  .altlink {
+    text-decoration: none;
+    color: var(--light);
+  }
+  .altlink:hover {
+    color: var(--primary-color);
+  }
+  .altnav .altlogo {
+    max-height: 40px;
+  }
+  .img-magnifier-glass {
+    display: none;
+  }
+}
+
+.wrong-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.wrong-page h2 {
+  font-family: var(--header-font);
+  z-index: 1;
+  position: relative;
+}
+.wrong-page p {
+  font-family: var(--common-font);
+  z-index: 1;
+  position: relative;
+}
+.error404 {
+  position: relative;
+  width: 80%;
+  margin-top: -80px;
+  align-self: flex-end;
+}
 /* direction End Lionel */
 
 
 
 /* Sur place Start Guillaume */
 
-.headband-sur-place {
-  display:flex;
-  justify-content: center;
-  font-family: var(--title-font);
-  color: var(--light-alternative);
-  font-size: 5vw;
+#surplace-headband {
   background-image: url("https://www.hellfest.fr/_nuxt/image/58a6fc.webp");
-  background-position: center;
-  padding: 15vw 0vw 15vw 0vw;
-  background-repeat: no-repeat;
-  background-size: 100vw; 
-  background-color: var(--dark);
 }
 
 .h2-sur-place, 
@@ -803,8 +903,24 @@ h1 {
 
 
 
-/* C ontact Aurore Start */
+/* Contact Aurore Start */
 
-/* C ontact Aurore End */
+/* Contact Aurore End */
 
+/* Test Lionel Zoom map */
+.img-magnifier-container {
+  position:relative;
+  width: 100%;
+  height: auto;
+}
 
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+/* Test Lionel Zoom map end */
