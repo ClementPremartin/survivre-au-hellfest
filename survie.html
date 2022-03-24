@@ -64,9 +64,10 @@
       <div id="h1">Les Indispensables</div>
       
       <br><br>
-        <p> Tu trouveras ici une liste non exhaustive des choses essantiels qu'il faudra prendre dans ton balluchon </p>
-        <p>Lorem ispum dolor sit amet, consectetur <i>adipiscing</i> elit. <b>Aenean vel</b> metus ultrices, fermentum orci sed, <b>vestibulum</b> sem. Aenean condimentum malesuada ante, <u id="helpfulspell">et scelerisque erat vulputate</u>. Nullam nec luctus arcu, vitae <b>placerat</b> nibh. Mauris a erat mattis, <u>aliquet mauris</u> at, Efficitur Lectus. Cras <b>interdum</b> Libero at facilisis condimentum. Duis laoreet lacinia tortor, et <u><b>accumsan</b></u> metus iaculis non. <u id="helpfulspell">Proin</u> ut lorem vitae massa ultrices efficitur ac ac nibh. Quisque mollis venenatis lacus mollis. Proin dignissim, quan non iaculis commodo, <i>orci ispum</i> gravida libero, sed posuere purus lorem a elit. Donec Vel sodales quam. Donec sit amet ultrices nunc, ispum.
-        </p>     
+        <p>Coups de soleil, pieds en compote, déshydratation, tympans explosés… Ce n’est pas parce que tu te rends au Hellfest qu’il faut accepter de vivre un enfer pendant trois jours. 
+        Tu trouveras donc ici<b> une liste non exhaustive</b> des choses essantiels qu'il faudra prendre dans ton balluchon afin de rester vivant! <br> 
+        Pour être sûr de ne rien oublier, tu pourras aussi ajouter tes claquettes et ton porte clé <u id="helpfulspell"> Iron Meiden</u> porte bonheure préféré en cliquant sur le bouton <b>"ajoute un truc"</b>.</p>
+
     </div>
   </div> 
 </div> 
@@ -75,60 +76,67 @@
   <h2>Checklist</h2>
   <ul class="stuff-survie">
     <li class="stuff">
-      <input type="checkbox" id="toile-de-tente" name="toile-de-tente">
-      <label for="toile-de-tente">Toile de Tente</label>
+      <input type="checkbox" id="checkboxId" name="toile-de-tente">
+      <label for="toile-de-tente" id="labelId">Toile de Tente</label>
     </li>
     
     <li class="stuff">
-      <input type="checkbox" id="sac-de-couchage" name="sac-de-couchage">
-      <label for="sac-de-couchage">Sac de couchage</label>
+      <input type="checkbox" id="checkboxId" name="sac-de-couchage">
+      <label for="sac-de-couchage" id="labelId">Sac de couchage</label>
     </li>
     
     <li class="stuff">
-      <input type="checkbox" id="chaussures" name="chaussures">
-      <label for="chaussures">Chaussures</label>
+      <input type="checkbox" id="checkboxId" name="chaussures">
+      <label for="chaussures" id="labelId">Chaussures</label>
     </li>
     
     <li class="stuff">
-      <input type="checkbox" id="lunettes-de-soleil" name="lunette-de-soleil">
-      <label for="lunette-de-soleil">Lunette de Soleil</label>
+      <input type="checkbox" id="checkboxId" name="lunette-de-soleil">
+      <label for="lunette-de-soleil" id="labelId">Lunette de Soleil</label>
     </li>
     
     <li class="stuff">
-      <input type="checkbox" id="bouteille" name="bouteille">
-      <label for="bouteille">Bouteille</label>
+      <input type="checkbox" id="checkboxId" name="bouteille">
+      <label for="bouteille" id="labelId">Bouteille</label>
     </li>
     
     <li class="stuff">
-      <input type="checkbox" id="trousse-de-secours" name="trousse-de-secours">
-      <label for="trousse-de-secours">Trousse de secours</label>
+      <input type="checkbox" id="checkboxId" name="trousse-de-secours">
+      <label for="trousse-de-secours" id="labelId">Trousse de secours</label>
     </li>
-</div>
+  </ul>
+ </div>
 
 
 <div class="interaction">
  
-  <div id="add-element">
+  <form id="form-survie">
     <label for="element"></label>
-    <input type="text" name="element" id="element" placeholder="Prendre des carottes">
-  </div>
+    <input type="text" name="element" id="inputId" placeholder="Prendre des carottes">
   
-  <div id="submit">
-    <input type="submit" value="Ajoute un truc!">
-  </div>
+    <div id="submit">
+      <input type="submit" value="Ajoute un truc!">
+    </div>
+  </form>
+
+  <button class="print-button" onclick="window.print()">Imprimer</button>
 
 </div>  
 
 
 <div class="video-reference-survie">
-  
-  <div class ="trousse-de-secours"> Trousse de Secours</div>
+  <div class="paper" id="paper-survie"> 
+    <div class ="trousse-de-secours"> Trousse de Secours</div>
 
-  <div class="youtube-link-survie">
-    <iframe width="90%" height="100%"  src="https://www.youtube.com/embed/bHusmzKSzsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>La Croix rouge recommande de se préparer une mini-trousse de secours avec des médicaments pour le mal de tête, des anti-vomitif et anti-diarrhéique, des pansements et médicaments que vous avez l’habitude de prendre (pilule contraceptive, allergies, diabète…). 
+      Un gel désinfectant pour les petites plaies n’est pas de trop. Pour compléter. N'hésite pas à checker la vidéo de la chaine <a class="linkDTC" href="https://www.youtube.com/channel/UCOchT7ZJ4TXe3stdLW1Sfxw">Dans Ton Corps</a> qui te donnera quelques tips. </p>
   </div>
-
-</div>
+  <div class="videoyoutube"> 
+    <div class="youtube-link-survie">
+      <iframe width="90%" height="100%"  src="https://www.youtube.com/embed/bHusmzKSzsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div> 
 
 <!-- Clément - contenu -->
 <!-- Clément - Footer -->
@@ -152,7 +160,7 @@
 </footer>
 <!-- Clément - Footer end -->
 
-<script src="script.js"></script>
+<script src="survie.js"></script>
 
 </body>
 </html>

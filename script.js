@@ -1,3 +1,4 @@
+
 const plane = document.getElementById('plane');
 const carpool = document.getElementById('carpool');
 const bus = document.getElementById('bus');
@@ -79,18 +80,4 @@ function magnify(imgID, zoom) {
       return {x : x, y : y};
     }
   }
-
-
-const addSomething = document.querySelector("#add-element");
-const toDoInput = document.querySelector("#element");
-const toDoList = document.querySelector("#submit");
-
-addSomething.onsubmit = function (event) { event.preventDefault();
-
-const newToDo = document.createElement("li");
-newToDo.innerHTML = toDoInput.value;
-toDoList.appendChild("newToDo");
-toDoInput.value = "";
-};
-
 
