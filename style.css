@@ -148,8 +148,9 @@ h1 {
     border-top-left-radius: 25px 25px;
     border-top-right-radius: 25px 25px;
     min-width: 55%;
-    height: 70%;
+    height: 100%;
     width: 100%;
+  
 }
 
 .sentence {
