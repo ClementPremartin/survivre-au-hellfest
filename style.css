@@ -839,11 +839,12 @@ h2 {
 
 .caption-sur-place,
 h1 {
-  text-align: center;
+  text-align:center;
   font-family: var(--title-font);
   font-size: 2em;
   padding: 10px 10px 0 10px;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 
 
@@ -916,6 +917,7 @@ h1 {
   min-width: 55%;
   max-height: 55%;
   width: 100%;
+  object-fit: cover;
 }
 
 
