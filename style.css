@@ -110,6 +110,8 @@ h1 {
 .back {
     width: 350px;
     height: 350px;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 
@@ -150,8 +152,9 @@ h1 {
     border-top-left-radius: 25px 25px;
     border-top-right-radius: 25px 25px;
     min-width: 55%;
-    height: 70%;
+    height: 80%;
     width: 100%;
+    object-fit: cover;
 }
  
 
@@ -468,7 +471,6 @@ p{
 }
 .container-contact p {
   margin-bottom: 25px;
-  text-shadow: 2px 2px 7px var(--dark);
 }
 
 .container-contact-infos {
