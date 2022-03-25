@@ -17,23 +17,150 @@
 <body>
 <!-- Guillaume - Navbar-->
 <!-- hamburger -->
-<input type="checkbox" id="navi-toggle" class="checkbox" />
-<label for="navi-toggle" class="button">
+<div class="jeanjeanladebrouille">
+  <input type="checkbox" id="navi-toggle" class="checkbox" />
+  <label for="navi-toggle" class="button">
   <span class="icon">&nbsp;</span>
-</label>
+      </label>
 <div class="background">&nbsp;</div>
 
-  <!-- nav -->
-  <a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
-  <nav class="nav">
-    <ul class="list">
-      <li class="item"> <a class="link" href="index.html#home">Accueil</a> </li>
-      <li class="item"> <a class="link" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
-      <li class="item"> <a class="link" href="surplace.html#place">Sur place</a> </li>
-      <li class="item"> <a class="link" href="contact.html#contact">Contact</a> </li>
-      <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
-    </ul>
+
+<!-- nav -->
+
+<a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
+<nav class="nav">
+  <ul class="list">
+    <li class="item"> <a class="link" href="index.html#home">Accueil</a> </li>
+    <li class="item"> <a class="link" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+    <li class="item"> <a class="link" href="surplace.html#place">Sur place</a> </li>
+    <li class="item"> <a class="link" href="contact.html#contact">Contact</a> </li>
+    <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+    <li class="item"> <a class="link" href="https://www.wacken.com/en/?r=1" target="_blank">Et après ?</a></li>
+  </ul>
+</nav>
+</div>
+<nav class="altnav">
+  <ul class="altlist">
+      <img class="altlogo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="">
+    <li class="altitem"> <a class="altlink" href="index.html#home">Accueil</a> </li>
+    <li class="altitem"> <a class="altlink" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+    <li class="altitem"> <a class="altlink" href="surplace.html#place">Sur place</a> </li>
+    <li class="altitem"> <a class="altlink" href="contact.html#contact">Contact</a> </li>
+    <li class="altitem"> <a class="altlink" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+    <li class="altitem"> <a class="altlink" href="https://www.wacken.com/en/?r=1" target="_blank">Et après ?</a></li>
+  </ul>
 </nav>
 <!-- Guillaume - Navbar end-->
+<!-- Clément - contenu -->
+
+<div class="headband" id="bandeau-survie">
+  <h1>Kit de Survie</h1>
+</div>
+
+<div class="headband-description">
+    
+  <div class="paper">
+    <div class = intro-survie>
+      <div id="h1">Les Indispensables</div>
+      
+      <br><br>
+        <p>Coups de soleil, pieds en compote, déshydratation, tympans explosés… Ce n’est pas parce que tu te rends au Hellfest qu’il faut accepter de vivre un enfer pendant trois jours. 
+        Tu trouveras donc ici<b> une liste non exhaustive</b> des choses essantiels qu'il faudra prendre dans ton balluchon afin de rester vivant! <br> 
+        Pour être sûr de ne rien oublier, tu pourras aussi ajouter tes claquettes et ton porte clé <u id="helpfulspell"> Iron Meiden</u> porte bonheure préféré en cliquant sur le bouton <b>"ajoute un truc"</b>.</p>
+
+    </div>
+  </div> 
+</div> 
+
+<div class="liste-survie" id="liste-survie-id">
+  <h2>Checklist</h2>
+  <ul class="stuff-survie">
+    <li class="stuff">
+      <input type="checkbox" id="checkboxId" name="toile-de-tente">
+      <label for="toile-de-tente" id="labelId">Toile de Tente</label>
+    </li>
+    
+    <li class="stuff">
+      <input type="checkbox" id="checkboxId" name="sac-de-couchage">
+      <label for="sac-de-couchage" id="labelId">Sac de couchage</label>
+    </li>
+    
+    <li class="stuff">
+      <input type="checkbox" id="checkboxId" name="chaussures">
+      <label for="chaussures" id="labelId">Chaussures</label>
+    </li>
+    
+    <li class="stuff">
+      <input type="checkbox" id="checkboxId" name="lunette-de-soleil">
+      <label for="lunette-de-soleil" id="labelId">Lunette de Soleil</label>
+    </li>
+    
+    <li class="stuff">
+      <input type="checkbox" id="checkboxId" name="bouteille">
+      <label for="bouteille" id="labelId">Bouteille</label>
+    </li>
+    
+    <li class="stuff">
+      <input type="checkbox" id="checkboxId" name="trousse-de-secours">
+      <label for="trousse-de-secours" id="labelId">Trousse de secours</label>
+    </li>
+  </ul>
+ </div>
+
+
+<div class="interaction">
+ 
+  <form id="form-survie">
+    <label for="element"></label>
+    <input type="text" name="element" id="inputId" placeholder="Prendre des carottes">
+  
+    <div id="submit">
+      <input type="submit" value="Ajoute un truc!">
+    </div>
+  </form>
+
+  <button class="print-button" onclick="window.print()">Imprimer</button>
+
+</div>  
+
+
+<div class="video-reference-survie">
+  <div class="paper" id="paper-survie"> 
+    <div class ="trousse-de-secours"> Trousse de Secours</div>
+
+    <p>La Croix rouge recommande de se préparer une mini-trousse de secours avec des médicaments pour le mal de tête, des anti-vomitif et anti-diarrhéique, des pansements et médicaments que vous avez l’habitude de prendre (pilule contraceptive, allergies, diabète…). 
+      Un gel désinfectant pour les petites plaies n’est pas de trop. Pour compléter. N'hésite pas à checker la vidéo de la chaine <a class="linkDTC" href="https://www.youtube.com/channel/UCOchT7ZJ4TXe3stdLW1Sfxw">Dans Ton Corps</a> qui te donnera quelques tips. </p>
+  </div>
+  <div class="videoyoutube"> 
+    <div class="youtube-link-survie">
+      <iframe width="90%" height="100%"  src="https://www.youtube.com/embed/bHusmzKSzsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div> 
+
+<!-- Clément - contenu -->
+<!-- Clément - Footer -->
+<footer class = footer-class>
+        
+  <img src="https://cdn.discordapp.com/attachments/953659564887244870/953659851672780820/logo.png" 
+  alt="logo-footer" id="logo-footer">
+  <img src="images/social media.png"
+  alt="social media image" class="social-media">
+  <div class="footer">
+         
+      <ul class="footer-links">
+          <li class="item2"> <a class="link2" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+          <li class="item2"> <a class="link2" href="survie.html#survive">Kit de survie</a> </li>
+          <li class="item2"> <a class="link2" href="surplace.html#place">Sur place</a> </li>
+          <li class="item2"> <a class="link2" href="contact.html#contact">Contact</a> </li>
+          <li class="item2"> <a class="link2" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+        </ul>
+
+  </div>
+</footer>
+<!-- Clément - Footer end -->
+
+<script src="survie.js"></script>
+
 </body>
 </html>

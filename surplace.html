@@ -17,23 +17,199 @@
 <body>
 <!-- Guillaume - Navbar-->
 <!-- hamburger -->
-<input type="checkbox" id="navi-toggle" class="checkbox" />
-<label for="navi-toggle" class="button">
-  <span class="icon">&nbsp;</span>
-</label>
+<div class="jeanjeanladebrouille">
+    <input type="checkbox" id="navi-toggle" class="checkbox" />
+    <label for="navi-toggle" class="button">
+    <span class="icon">&nbsp;</span>
+        </label>
 <div class="background">&nbsp;</div>
 
+
   <!-- nav -->
-  <a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
-  <nav class="nav">
+
+<a href="https://www.hellfest.fr/"><img class="logo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="logo SAH"></a>
+<nav class="nav">
     <ul class="list">
       <li class="item"> <a class="link" href="index.html#home">Accueil</a> </li>
       <li class="item"> <a class="link" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
       <li class="item"> <a class="link" href="survie.html#survive">Kit de survie</a> </li>
       <li class="item"> <a class="link" href="contact.html#contact">Contact</a> </li>
       <li class="item"> <a class="link" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+      <li class="item"> <a class="link" href="https://www.wacken.com/en/?r=1" target="_blank">Et après ?</a></li>
+    </ul>
+</nav>
+</div>
+<nav class="altnav">
+    <ul class="altlist">
+        <img class="altlogo" src="https://cdn.discordapp.com/attachments/952882720080543805/953653844598992896/logo.png" alt="">
+      <li class="altitem"> <a class="altlink" href="index.html#home">Accueil</a> </li>
+      <li class="altitem"> <a class="altlink" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+      <li class="altitem"> <a class="altlink" href="survie.html#survive">Kit de survie</a> </li>
+      <li class="altitem"> <a class="altlink" href="contact.html#contact">Contact</a> </li>
+      <li class="altitem"> <a class="altlink" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+      <li class="altitem"> <a class="altlink" href="https://www.wacken.com/en/?r=1" target="_blank">Et après ?</a></li>
     </ul>
 </nav>
 <!-- Guillaume - Navbar end-->
+<!-- Clément - Bandeau header -->
+
+<!--<div class="Video Home-introVideo" data-v-13c7e8f7="" data-v-6cefe210="">
+  <video autoplay muted="muted" loop="loop" playsinline="" class="Video-video u-sizeFull u-heightFull" 
+  data-v-13c7e8f7="" data-lazyload="loaded"><source data-src="https://www.hellfest.fr//videos/home-intro.mp4" 
+  type="video/mp4" data-v-13c7e8f7="" src="https://www.hellfest.fr//videos/home-intro.mp4"></video> 
+  <div class="BaseImage u-posFit BaseImage--cover" data-v-e7a90630="" data-v-13c7e8f7="" 
+  style="display: none;"><img data-src="https://www.hellfest.fr/_nuxt/image/58a6fc.webp" decoding="async" 
+  class="BaseImage-image" data-v-e7a90630="" data-lazyload="loaded" src="https://www.hellfest.fr/_nuxt/image/58a6fc.webp">
+</div>
+</div>-->
+
+<!--<div class = headband-sur-place>
+  <h1>Survivre au HellFest</h1>
+</div> -->
+
+<div class = headband id="surplace-headband">
+  <h1>Sur PLace !</h1>
+</div>
+
+
+<!-- Clément - Bandeau header end -->
+<!-- Sur place -->
+<!-- Sur place titre et map -->
+
+<div class="img-magnifier-container">
+    <img id="myimage" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/13411741_10153556450452536_1705821655704452280_o.jpg?_nc_cat=109&ccb=1-5&_nc_sid=9267fe&_nc_ohc=mB0dKgrYMnkAX9Buk8C&_nc_ht=scontent-cdt1-1.xx&oh=00_AT_AN1J4m2sL0VDXzkbti8oR4Bo171vic5SO0yN7G2uSZg&oe=62607657" width="100%" height="auto">
+</div>
+
+<!-- Sur place titre et map end -->
+<!-- Sur place cartes -->
+<div id="content-sur-place">
+  <div class="container-sur-place">
+      <div class="flipper-sur-place">
+          <div class="front-sur-place">
+              <img class="card-sur-place" src="https://media.ouest-france.fr/v1/pictures/MjAxODA2MTVkZjZjNjdiYTcxYWEyYmMwZjZjNTRmNThmMWUyNGU?width=630&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=0725cb67e0bed5778fca3ec28ced6ba82edf884a0fc95cab9fd1705b712a193a"
+                  alt="carte au trésor">
+              <p class="caption-sur-place">Un camping !? Pour dormir !?</p>
+          </div>
+          <div class="back-sur-place">
+              <h1>Même Dante s'y serais senti bien</h1>
+              <p class="description-sur-place">C'est assez mal vu, je te l'accorde futur Hellfestien, mais pas d'inquiétudes, dormir est tout à fait possible et pour ceci deux options s'offre à toi.<br><br>
+                Tout d'abord, le <a class="cards-link" href="https://www.hellfest.fr/faq/camping-easy-camp/" target="_blank">camping officiel</a>, gratuit et accessible à tous les festivaliers, une orgie permanente, une éloge à la débauche, une ode à la dépravation, l'apothéose de la beuverie, tu en ressortiras grandi ! Ou pas...<br><br>
+                Si tu préfères un endroit plus isolé, confortable et intime, le <a class="cards-link" href="https://sites.weezevent.com/hellfest-easycamp-2022/" target="_blank">Easy Camp</a> est fait pour toi, véritable petit îlot de sérénité au milieu du Tartare, cependant, il est payant et il faudra le réserver à l'avance.</p>
+          </div>
+      </div>
+  </div>
+  <div class="container-sur-place">
+      <div class="flipper-sur-place">
+          <div class="front-sur-place">
+              <img class="card-sur-place" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdfN2hstPrASOio3wzdI_l5yWtdMknSuz2w&usqp=CAU"
+                  alt="place du Hellfest">
+              <p class="caption-sur-place">Un paiement en nature !? </p>
+          </div>
+          <div class="back-sur-place">
+              <h1>Le système cashless</h1>
+              <p class="description-sur-place">Le paiement en nature est bien évidemment autorisé, voire même encouragé, mais rassure toi ami prude, d'autres moyens sont possibles.<br><br>
+                La création et l’utilisation d’un compte Cashless est indispensable sur le festival. Pour consommer dans les bars et également dans les espaces restauration, tu dois obligatoirement utiliser (et donc charger) ton bracelet <a class="cards-link" href="https://www.hellfest.fr/faq/cashless/" target="_blank">Cashless Hellfest</a> avant ou pendant le festival.
+                Le chargement de ton compte cashless peut se faire via l’application Hellfest sur ton mobile, t'évitant ainsi la file d’attente aux banques physiques.<br><br>
+                Sinon, certains établissements acceptent aussi d'échanger leurs produits contre des informations sur des <a class="cards-link" href="https://clementpremartin.github.io/survivre-au-hellfest/erreur.html#php_error">codeurs PHP</a> au sein du festival, afin de les débusquer, et de les violer sauvagement.</p>
+            </div>
+          </div>
+  </div>
+  <div class="container-sur-place">
+    <div class="flipper-sur-place">
+        <div class="front-sur-place">
+            <img class="card-sur-place" src="https://cdn.lebuteur.com/data/images/flash/thumbs/large-bayern-la-traditionnelle-douche-de-biere-pour-guardiola-video-412fc.jpg"
+                alt="place du Hellfest">
+            <p class="caption-sur-place">On se douche à la bière ? </p>
+        </div>
+        <div class="back-sur-place">
+            <h1>De l'eau pour les Helléphants</h1>
+            <p class="description-sur-place">Hélas ! La bière est une ressource bien trop précieuse pour l'utiliser à cette fin, et d'une efficacité douteuse dans ce cas précis.
+                Encore que, certaines entreprises commercialises des <a class="cards-link" href="https://www.eole-agape.com/fr/gel-douche/9470313-gel-douche-a-la-biere-westmalle-trappistenbier-douchegel-5425008369273.html" target="_blank">gels douche à la bière</a>, si jamais tu as déjà tenté l'expérience, je t'encourage à nous donner tes impressions.<br><br>
+                Tu pourras trouver de quoi te doucher au point H2O du <a class="cards-link" href="https://www.hellfestcorner.com/" target="_blank">Metal Corner</a>, des touches individuelles pour les plus pudiques, 
+                mais méfiance, la file d'attente risque d'être longue, et également des douches publiques, 
+                ou le maillot n'est pas obligatoire, si tu te sens bien dans ton corps comme tout bon Hellfestien !</p>
+        </div>
+    </div>
+  </div>
+  <div class="container-sur-place">
+    <div class="flipper-sur-place">
+        <div class="front-sur-place">
+            <img class="card-sur-place" src="https://raw.githubusercontent.com/ClementPremartin/survivre-au-hellfest/dev/assets/Rolex.JPG"
+                alt="place du Hellfest">
+            <p class="caption-sur-place">Et si j'apporte ma Rolex ? </p>
+        </div>
+        <div class="back-sur-place">
+            <h1>Les casiers, un petit coin de paradis en enfer</h1>
+            <p class="description-sur-place">Alors déjà, je te déconseille d'amener quoi que ce soit de valeur, mais si jamais tu es un peu foufou, pas de panique, tu peux stocker tes affaires en toute sécurité aux <a class="cards-link" href="https://www.hellfest.fr/faq/casiers-consignes" target="_blank">consignes et dans les casiers</a> disponibles.<br><br>
+                Les casiers sont bien évidemment disponibles en différentes tailles (S, M, L, XL), de quoi protéger toutes sortes d'objet et, pourquoi pas, se débarrésser pour une durée limitée d'une personne un peu trop encombrante.<br><br>
+                Ils doivent cependant <a class="cards-link" href="https://www.plugandlock.com/hellfest/" target="_blank">être réservé en ligne</a> avant le début du festival afin de pouvoir en bénéficier.</p>
+        </div>
+    </div>
+  </div>
+  <div class="container-sur-place">
+    <div class="flipper-sur-place">
+        <div class="front-sur-place">
+            <img class="card-sur-place" src="https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/4/5/2/4520bd4519_50161415_adobestock-329932655.jpg"
+                alt="place du Hellfest">
+            <p class="caption-sur-place">Je ramnène mon stock covid ?</p>
+        </div>
+        <div class="back-sur-place">
+            <h1>Le Hellfest, un lieu d'aisance</h1>
+            <p class="description-sur-place">Non futur Hellfestien, nul besoin de gâcher ton précieux stock, comme tout à chacun, au Hellfest, ils savent que même en enfer une colique peut te gâcher la vie.<br><br>
+                Pendant l’événement, des <a class="cards-link" href="https://www.ouest-france.fr/festivals/hellfest/hellfest-met-un-point-d-honneur-ce-que-l-eau-soit-potable-6406433" target="_blank">équipes de bénévoles et de pros</a> inspectent et nettoient régulièrement les sanitaires, qui de leurs propres aveux avouent que la partie la plus déprimante, c’est après le festival… En même temps, ils y restent encore quinze jours, pour tout démonter, et nettoyer...<br><br>
+                Si tu n'es toujours pas rassuré, sache qu'il existe des <a class="cards-link" href="https://www.ladepeche.fr/article/2014/05/07/1876788-un-kit-de-survie-wc-pour-festivaliers.html" target="_blank">kit de survie WC</a> pour festivaliers, pour parer à toute éventualité, et afin de te déplacer avec style vers les toilettes, car le kit ne manque pas d'une certaine classe.</p>
+        </div>
+    </div>
+  </div>
+  <div class="container-sur-place">
+    <div class="flipper-sur-place">
+        <div class="front-sur-place">
+            <img class= "card-sur-place" src="https://img.lemde.fr/2016/09/09/1181/506/1172/586/1440/720/60/0/e5f7fdf_22013-1ir86sh.jpg" alt="sac à dos ">
+            <p class="caption-sur-place">Faut-il être anthropophage ?</p>
+        </div>
+        <div class="back-sur-place">
+            <h1>Heavy Meal pour tous !</h1>
+            <p class="description-sur-place">Que tu sois un éternel assoiffé dont le gosier n'a de cesse de se dessécher à vitesse d'un Hellfestien au galop ou encore un fin gourmet en recherche perpétuelle de l'orgasme culinaire, tu trouveras au Hellfest tout ce dont rêvait l'excessif Dionysos.<br><br>
+              Sache que les <a class="cards-link" href="https://www.hellfest.fr/faq/bar-restauration" target="_blank">personnes en charge de cette difficile mission</a> ont fait leurs preuves, et si jamais les files d'attente te semblent trop longues, des “dessoiffeurs”, véritables commandos itinérants de la soif peuvent vous servir de la bière n’importe où dans l’enceinte du Hellfest grâce à leurs citernes embarquées.
+              Pour les amateurs de vins rendez-vous devant la Warzone ou au Metal Corner, pour découvrir les bars à vins !
+              La crème de la crème des <a class="cards-link" href="https://www.ouest-france.fr/pays-de-la-loire/loire-atlantique/vignerons-les-indispensables-du-hellfest-4297521" target="_blank">viticulteurs de Clisson</a> sera là pour la dégustation.<br><br>
+              Coté restauration, le Hellfest n'est pas en reste, tu trouveras de nombreux stands dans l’enceinte du festival et également au Metal Corner.
+              En vérité, la plus grande difficulté résidera dans ta capacité à conserver tous ces délicieux mets à l'intérieur de ton corps.</p>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Sur place cartes end -->
+<!-- Sur place end-->
+<!-- Lionel - Bandeau spotify -->
+<section class="embedded">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZnlcbl9Edex?utm_source=generator" width="90%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</section>
+<!-- Lionel - Bandeau spotify end -->
+<!-- Clément - Footer -->
+
+<footer class = footer-class>
+        
+  <img src="https://cdn.discordapp.com/attachments/953659564887244870/953659851672780820/logo.png" 
+  alt="logo-footer" id="logo-footer">
+  <img src="images/social media.png"
+  alt="social media image" class="social-media">
+  <div class="footer">
+         
+      <ul class="footer-links">
+          <li class="item2"> <a class="link2" href="direction.html#go_to_hellfest">Se rendre au Hellfest</a> </li>
+          <li class="item2"> <a class="link2" href="survie.html#survive">Kit de survie</a> </li>
+          <li class="item2"> <a class="link2" href="surplace.html#place">Sur place</a> </li>
+          <li class="item2"> <a class="link2" href="contact.html#contact">Contact</a> </li>
+          <li class="item2"> <a class="link2" href="erreur.html#php_error">Et si je code en PHP ?</a> </li>
+        </ul>
+
+  </div>
+</footer>
+
+
+<!-- Clément - Footer end -->
+<script src="surplace.js"></script>
+
 </body>
 </html>
