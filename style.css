@@ -152,12 +152,13 @@ h1 {
     width: 100%;
 }
 
-p sentence {
-color:var(--primary-color)
+.sentence {
+color:var(--secondary-color)
 }
+
  
 
- /*Aurore'cards end*/
+ /*Aurore'cards end*/ 
 
 
 /* Guillaume's Navbar */
