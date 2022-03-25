@@ -668,6 +668,7 @@ input[type=submit] {
    
 }
 
+
 input[type=submit]:active{
   background: var(--primary-color);
   color: var(--dark);

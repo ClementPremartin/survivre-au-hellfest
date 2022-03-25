@@ -14,18 +14,21 @@ addSomething.onsubmit = function (event){
 
   
   const newToDo = document.createElement("li");
+  newToDo.classList.add('stuff');
   
   const newCheckbox = document.createElement('input');
   newCheckbox.setAttribute("type", "checkbox");
+  newCheckbox.setAttribute("id", "checkboxId");
   newToDo.appendChild(newCheckbox);
 
   const newLabel = document.createElement('label');
   newLabel.setAttribute("id", "labelId");
   newLabel.innerHTML = toDoInput.value;
-
-  toDoList.appendChild(newLabel);
+  newLabel.style.padding = "13px";
+  newToDo.appendChild(newLabel);
+  
   toDoList.appendChild(newToDo);
-  toDoList.classList.add('stuff');
+  
   toDoInput.value = "";
 
 };
