@@ -9,6 +9,7 @@
     --primary-color: #F09D51;
     --secondary-color: #F06543 ;
     --light-alternative: #EBEAE8;
+    --footer-image: url(images/smoke.jpg);
   }
 
   [data-theme="dark"] {
@@ -20,6 +21,7 @@
     --primary-color: #F7D6E0;
     --secondary-color: #14AECC ;
     --light-alternative: #B2F7EF;
+    --footer-image: none;
   }
 
 * {margin: 0;
@@ -314,10 +316,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: url(images/smoke.jpg);
+  background-image: var(--footer-image);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100vw;
+  background-color: #14AECC;
  
 
 }
@@ -363,13 +366,15 @@ text-decoration: none;
 	border-radius: 3px;
 	box-shadow: 5px 15px 30.4px grey;
   margin-top: 18px;
+  color: var(--dark);
 }
 
 #h1 {
 	font-weight: 800;
 	font-size: 30px;
 	letter-spacing: 2.11px;
-	font-family: 'Metal Mania', cursive;
+	font-family: var(--title-font);
+  color: var(--dark);
 }
 
 b {
@@ -744,6 +749,9 @@ input[type=submit]:active{
   .altnav{
     display: none;
   }
+  .theme-switch-wrapper {
+    display: none;
+  }
 }
 @media screen and (min-width: 720px) {
   .jeanjeanladebrouille{
@@ -964,13 +972,10 @@ h1 {
 /* Test Lionel Zoom map end */
 
 /* Switch kawai mode */
-.theme-switch-wrapper {
-  bottom: 10px;
-  right: 10px;
-}
+
 
 .theme-switch {
-  display: inline-block;
+  display: flex;
   height: 34px;
   position: relative;
   width: 60px;
@@ -1010,11 +1015,18 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+
 .slider.round {
   border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
+}
+.theme-switch-wrapper h3 {
+  font-family: var(--common-font);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
 }
 /* end switch kawai mode */
