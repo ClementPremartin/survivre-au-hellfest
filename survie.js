@@ -15,16 +15,17 @@ addSomething.onsubmit = function (event){
   
   const newToDo = document.createElement("li");
   
-  
-  newToDo.innerHTML = toDoInput.value;
-  newToDo.classList.add("stuff");
-  
   const newCheckbox = document.createElement('input');
   newCheckbox.setAttribute("type", "checkbox");
   newToDo.appendChild(newCheckbox);
 
-  toDoList.appendChild(newToDo);
+  const newLabel = document.createElement('label');
+  newLabel.setAttribute("id", "labelId");
+  newLabel.innerHTML = toDoInput.value;
 
+  toDoList.appendChild(newLabel);
+  toDoList.appendChild(newToDo);
+  toDoList.classList.add('stuff');
   toDoInput.value = "";
 
 };
