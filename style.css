@@ -384,7 +384,7 @@ b {
 #helpfulspell {
 	letter-spacing: 0.7px;
 	text-shadow: 0px 0px 3px;
-	color: goldenrod;
+	color: var(--secondary-color);
 }
 
 a {
