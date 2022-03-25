@@ -451,12 +451,14 @@ a {
 
 p{
   font-family: var(--common-font);
+
 }
 
 .julien{
   border-radius: 100%;
   width: 100px;
   }
+
 
 .container-contact {
   display: flex;
@@ -465,7 +467,8 @@ p{
   align-items: center;
 }
 .container-contact p {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 7px var(--dark);
 }
 
 .container-contact-infos {
@@ -572,6 +575,38 @@ input.error{
   padding: 5px 15px;
 }
 
+.newsletter button:hover {
+
+  color: var(--dark);
+  border: var(--dark) solid 1px;
+  background: var(--secondary-color);
+  }
+
+
+ /*test bulle photo julien start*/
+ .tooltip_div {
+  position: relative;
+  display: inline-block;
+  }
+
+ .tooltip {
+  visibility: hidden;
+  width: 170px;
+  background-color:var(--secondary-color);
+  color: var(--light-alternative);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Positioning the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -32px;
+  left: -25%;
+  }
+  .tooltip_div:hover .tooltip {
+  visibility: visible;
+  }
+ /*test bulle photo julien end*/
 
 /* Aurore - contact-end */
 
@@ -672,6 +707,7 @@ input[type=submit] {
   
    
 }
+
 
 input[type=submit]:active{
   background: var(--primary-color);
@@ -847,11 +883,12 @@ h2 {
 
 .caption-sur-place,
 h1 {
-  text-align: center;
+  text-align:center;
   font-family: var(--title-font);
   font-size: 2em;
   padding: 10px 10px 0 10px;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 
 
@@ -924,6 +961,7 @@ h1 {
   min-width: 55%;
   max-height: 55%;
   width: 100%;
+  object-fit: cover;
 }
 
 
