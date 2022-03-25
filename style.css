@@ -151,6 +151,10 @@ h1 {
     height: 70%;
     width: 100%;
 }
+
+p sentence {
+color:var(--primary-color)
+}
  
 
  /*Aurore'cards end*/
